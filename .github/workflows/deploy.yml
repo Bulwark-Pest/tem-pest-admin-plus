@@ -2,32 +2,38 @@ name: Deploy to Google Cloud VM
 
 on:
   push:
-    branches:
-      - master  # Adjust this if your main branch has a different name
+  branches:
+    - master  # Adjust this if your main branch has a different name
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Use Node.js 18.18.0
-      uses: actions/setup-node@v2
-      with:
-        node-version: '18.18.0'
+      - name: Use Node.js 18.18.0
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18.18.0'
 
-    - name: SSH and Deploy
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.SSH_KEY }}
-        script: |
-          cd /var/www/admin-plus
-          git reset --hard HEAD
-          git pull origin master
-          npm install
-          npm run build
-          pm2 restart all
+      - name: SSH and Deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            nvm install 18.18.0
+            nvm use 18.18.0
+            
+            cd /var/www/admin-plus
+            git reset --hard HEAD
+            git pull origin master
+            npm install
+            npm run build
+            pm2 restart all
