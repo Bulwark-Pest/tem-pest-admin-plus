@@ -5,7 +5,7 @@
 <template>
   <div class="content">
     <div class="words">
-      This is not a test of the emergency broadcast system...
+      THIS IS NOT A TEST OF THE EMERGENCY BROADCAST SYSTEM
     </div>
   </div>
 </template>
