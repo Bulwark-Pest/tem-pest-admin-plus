@@ -5,7 +5,7 @@
 <template>
   <div class="content">
     <div class="words">
-      Stop telling me my key is wrong, it is right, I promise
+      Who took the cookie from the cookie jar
     </div>
   </div>
 </template>
