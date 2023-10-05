@@ -3,9 +3,12 @@
 </script>
 
 <template>
-  <div>Hello from Test #1</div>
+  <div id="test1">Hello from Test #1</div>
 </template>
 
 <style scoped>
+#test1 {
+  background-color: aqua;
+}
 
 </style>

@@ -1,10 +1,10 @@
 <script setup>
-import HelloWorld from "@/App.vue";
+import Home from "../components/home_page/Home.vue"
 </script>
 
 <template>
   <div class="content">
-    <HelloWorld />
+    <Home />
   </div>
 </template>
 
