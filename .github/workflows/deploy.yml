@@ -1,0 +1,28 @@
+name: Deploy to Google Cloud VM
+
+on:
+  push:
+    branches:
+      - master  # Adjust this if your main branch has a different name
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: SSH and Deploy
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SSH_KEY }}
+        script: |
+          cd /var/www/admin-plus
+          git reset --hard HEAD
+          git pull origin master
+          npm install
+          npm run build
+          pm2 restart all

@@ -5,7 +5,7 @@
 <template>
   <div class="content">
     <div class="words">
-      Hello Pierce, I have been expecting you...
+      This is not a test of the emergency broadcast system...
     </div>
   </div>
 </template>
