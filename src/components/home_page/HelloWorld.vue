@@ -15,7 +15,7 @@
 
 <style scoped>
 .content {
-  background-color: #006834;
+  background-color: #09739a;
   padding: 10px;
   height: calc(100vh - 160px);
   border-radius: 15px;
@@ -24,7 +24,7 @@
 
 .words {
   padding: 15px;
-  background-color: #2eb02e;
+  background-color: #f8f8f8;
   border-radius: 15px;
 }
 
