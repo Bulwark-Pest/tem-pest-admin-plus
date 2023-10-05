@@ -15,17 +15,17 @@
 
 <style scoped>
 .content {
-  background-color: #09739a;
-  padding: 10px;
+  background-color: #81abb7;
+  padding: 3px;
   height: calc(100vh - 160px);
-  border-radius: 15px;
-  margin: 20px;
+  border-radius: 1px;
+  margin: 10px;
 }
 
 .words {
   padding: 15px;
   background-color: #f8f8f8;
-  border-radius: 15px;
+  border-radius: 3px;
 }
 
 </style>
