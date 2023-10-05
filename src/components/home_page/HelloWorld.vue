@@ -5,7 +5,7 @@
 <template>
   <div class="content">
     <div class="words">
-      Is this thing on...
+      Do you wanna build a snowmaaaaaaaan...
     </div>
   </div>
 </template>
