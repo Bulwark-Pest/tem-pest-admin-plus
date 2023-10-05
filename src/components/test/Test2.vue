@@ -8,6 +8,6 @@
 
 <style scoped>
 #test2 {
-  background-color: orchid;
+  background-color: #ff5c5c;
 }
 </style>
