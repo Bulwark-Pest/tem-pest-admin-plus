@@ -1,5 +1,4 @@
 <script setup>
-import HelloWorld from './components/home_page/HelloWorld.vue'
 import Header from "@/components/Header.vue";
 </script>
 
