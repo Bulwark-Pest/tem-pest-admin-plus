@@ -5,7 +5,10 @@
   <div class="header">
     <div class="buttonContainer">
       <div>
-        <router-link to="HelloWorld" class="router-link-button">Hello World</router-link>
+        <router-link to="Home" class="router-link-button">Hello World</router-link>
+      </div>
+      <div>
+        <router-link to="Test" class="router-link-button">Testing</router-link>
       </div>
     </div>
   </div>

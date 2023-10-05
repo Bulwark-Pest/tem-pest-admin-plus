@@ -8,10 +8,8 @@ import Header from "@/components/Header.vue";
     <div id="header">
       <Header />
     </div>
-    <div>
-      <HelloWorld />
-    </div>
   </div>
+  <router-view id="currentPage"/>
 </template>
 
 <style scoped>
