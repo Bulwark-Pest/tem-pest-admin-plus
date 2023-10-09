@@ -8,6 +8,9 @@ export const useTesterStore= defineStore({
     actions: {
         increaseCount() {
             this.tester++
+        },
+        decreaseCount() {
+            this.tester--
         }
     }
 })
