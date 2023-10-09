@@ -22,6 +22,6 @@ const testerText = useTesterStore()
 
 <style scoped>
 .content {
-  background: aqua;
+
 }
 </style>

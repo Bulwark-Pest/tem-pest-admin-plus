@@ -1,6 +1,6 @@
 body {
   font-family: "Trebuchet MS", sans-serif;
-  background-image: url("https://s3.us-west-2.amazonaws.com/assets.bulwarkpest.com/neighborhood/tempestMap.jpg");
+  background-color: lightgrey;
   font-size: 20px;
-  /*background-color: #00ff00;*/
+  margin: 0;
 }

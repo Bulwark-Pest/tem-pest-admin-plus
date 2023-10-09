@@ -1,11 +1,15 @@
 <script setup>
 import Header from "@/components/common/Header.vue";
+import Sidbar from "@/components/common/Sidebar.vue";
 </script>
 
 <template>
   <div class="content">
     <div id="header">
       <Header />
+    </div>
+    <div id="sidbar">
+      <Sidbar />
     </div>
   </div>
   <router-view id="currentPage"/>
