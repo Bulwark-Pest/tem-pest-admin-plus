@@ -5,7 +5,7 @@
 <template>
   <div class="content">
     <div class="words">
-      Who took the cookie from the cookie jar
+      Who took the cookie from the cookie jar?
       <br>
       <br>
       It was me... and I will not apologize

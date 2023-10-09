@@ -1,13 +1,18 @@
 <script setup>
+import { useTesterStore } from "@/stores/tester";
 
+const testerText = useTesterStore()
 </script>
 
 <template>
-  <div id="test1">Hello from Test #1</div>
+  <div class="tester">
+    {{ testerText.tester }}
+  </div>
+  <button @click="testerText.increaseCount">+</button>
 </template>
 
 <style scoped>
-#test1 {
+.tester {
   background-color: aqua;
 }
 

@@ -1,5 +1,4 @@
 <script setup>
-
 import Test1 from "@/components/test/Test1.vue";
 import Test2 from "@/components/test/Test2.vue";
 </script>
