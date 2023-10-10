@@ -18,8 +18,10 @@
   background-color: #81abb7;
   padding: 3px;
   height: calc(100vh - 160px);
-  border-radius: 1px;
+  border-radius: 2px;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .words {
