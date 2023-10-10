@@ -9,6 +9,8 @@
       <br>
       <br>
       It was me... and I will not apologize
+      <br>
+      Please don't forget to update master Pierce
     </div>
   </div>
 </template>
