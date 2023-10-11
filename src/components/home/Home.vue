@@ -17,18 +17,16 @@
 
 <style scoped>
 .content {
-  background-color: #81abb7;
+  background-color: var(--secondary-color);
   padding: 3px;
   height: calc(100vh - 160px);
   border-radius: 2px;
   margin: 10px;
-  display: flex;
-  flex-direction: column;
 }
 
 .words {
   padding: 15px;
-  background-color: #f8f8f8;
+  background-color: var(--primary-color);
   border-radius: 3px;
 }
 

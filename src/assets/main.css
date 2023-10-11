@@ -1,6 +1,18 @@
+:root {
+  --primary-color: #f8f8f8;
+  --secondary-color: #293a50;
+  --background-color: lightgrey
+}
+
 body {
   font-family: "Trebuchet MS", sans-serif;
-  background-color: lightgrey;
-  font-size: 20px;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  font-size: 20px;
+ }
+
+.container {
+  margin: 0 auto;
 }

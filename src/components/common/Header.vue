@@ -2,42 +2,45 @@
 </script>
 
 <template>
-  <div class="header">
-    <div>
-      <router-link to="Home" class="logo">
+  <header>
+    <nav class="container">
+      <div class="logo">
         <img src="@/assets/images/admin-logo.png" alt="Admin Logo">
-      </router-link>
-    </div>
-  </div>
+      </div>
+      <ul class="nav-routes">
+        <router-link to="/">Home</router-link>
+        <router-link to="/Test">Test</router-link>
+      </ul>
+    </nav>
+  </header>
 </template>
 
 <style scoped>
-.header {
-  display: flex;
-  justify-content: left;
-  background-color: #293a50;
-  padding: 5px;
-}
-
-.logo {
-  height: 30px;
-  border-radius: 2px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 15px;
-  background-color: #293a50;
-  color: #d5d5d5;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.vertical-line {
-  height: 100%;
-  width: 1px; /* Or whatever width you want */
-  background-color: rgba(0, 255, 0, 0.09); /* Or any other color */
+header {
+  background-color: var(--secondary-color);
+  nav {
+    display: flex;
+    align-items: center;
+    padding: 25px 16px;
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    img {
+      max-width: 50px;
+    }
+    .nav-routes {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      gap: 12px;
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: var(--primary-color);
+      }
+    }
+  }
 }
 </style>
