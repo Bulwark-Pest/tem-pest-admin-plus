@@ -1,40 +1,31 @@
 <script setup>
-import { useToggleSidebar } from "@/stores/sidebar";
+import { useSidebarStore } from "@/stores/sidebarStore";
 
-const sidebarToggle = useToggleSidebar()
+const sidebarStore = useSidebarStore()
 </script>
 
 <template>
   <div class="content">
-    <nav>
-      <router-link to="Test" class="router-link-button">Testing</router-link>
-<!--      <span class="collapse-icon" @click="sidebarToggle.collapse">-->
-<!--        <i class="fas fa-angle-double-left" />-->
-<!--      </span>-->
+    <button @click="sidebarStore.toggleSidebar()">Toggle Sidebar</button>
+    <nav :class="['sidebar', { 'shrink': !sidebarStore.collapsed }]">
+      <router-link to="Test" class="router-link-button">Test</router-link>
     </nav>
   </div>
 </template>
 
 <style scoped>
-.content {
+.sidebar {
+  display: flex;
+  height: 100%;
+  width: 250px;
   color: var(--secondary-color);
   background-color: var(--primary-color);
-  margin-top: 78px;
-
-  float: left;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  padding: 0.5em;
+  position: absolute;
 
   transition: 0.3s ease;
 }
 
-.collapse-icon {
-  position: absolute;
-  bottom: 0;
-  padding: 0.75em;
-  color: var(--secondary-color);
-  transition: 0.2s linear;
+.shrink {
+  width: 50px;
 }
 </style>

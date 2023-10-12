@@ -3,7 +3,7 @@
 
 <template>
   <header>
-    <nav class="container">
+    <nav>
       <div class="logo">
         <img src="@/assets/images/admin-logo.png" alt="Admin Logo">
       </div>
@@ -18,29 +18,37 @@
 <style scoped>
 header {
   background-color: var(--secondary-color);
-  nav {
-    display: flex;
-    align-items: center;
-    padding: 25px 16px;
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    img {
-      max-width: 50px;
-    }
-    .nav-routes {
-      display: flex;
-      flex: 1;
-      justify-content: flex-end;
-      gap: 12px;
-      list-style: none;
-      a {
-        text-decoration: none;
-        color: var(--primary-color);
-      }
-    }
-  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+img {
+padding: 10px;
+}
+
+.nav-routes {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  gap: 12px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--tertiary-color);
 }
 </style>

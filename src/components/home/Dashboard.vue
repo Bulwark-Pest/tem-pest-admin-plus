@@ -10,24 +10,25 @@
       <br>
       It was me... and I will not apologize
       <br>
-      Please don't forget to update master Pierce
+      <br>
+      Update your master Dexter!
     </div>
   </div>
 </template>
 
 <style scoped>
 .content {
+  display: flex;
   background-color: var(--secondary-color);
-  padding: 3px;
+  padding: 10px;
   height: calc(100vh - 160px);
   border-radius: 2px;
-  margin: 10px;
 }
 
 .words {
   padding: 15px;
   background-color: var(--primary-color);
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 </style>

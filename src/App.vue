@@ -5,7 +5,7 @@ import Sidebar from "@/components/common/Sidebar.vue";
 
 <template>
   <Header />
-<!--  <Sidebar />-->
+  <Sidebar />
   <router-view id="currentPage"/>
 </template>
 
