@@ -5,19 +5,31 @@ const sidebarStore = useSidebarStore()
 </script>
 
 <template>
-  <div class="content">
-    <button @click="sidebarStore.toggleSidebar()">Toggle Sidebar</button>
-    <nav :class="['sidebar', { 'shrink': !sidebarStore.collapsed }]">
-      <router-link to="Test" class="router-link-button">Test</router-link>
-    </nav>
+  <div class="d-flex">
+    <div :class="['bg-white', sidebarStore.isSidebarOpen ? 'w-25' : 'w-10']"
+         @mouseover="!sidebarStore.isSidebarLocked && sidebarStore.setSidebarState(true)"
+         @mouseout="!sidebarStore.isSidebarLocked && sidebarStore.setSidebarState(false)">
+      <div>
+        <router-link to="Test">Test</router-link>
+      </div>
+      <button v-if="sidebarStore.isSidebarOpen"
+              class="btn btn-primary position-absolute"
+              @click="sidebarStore.lockSidebar">
+        {{ sidebarStore.isSidebarLocked ? 'Unlock' : 'Lock' }}
+      </button>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.sidebar {
+.content {
   display: flex;
-  height: 100%;
+  flex-direction: row;
+}
+
+.expand {
   width: 250px;
+  height: 100%;
   color: var(--secondary-color);
   background-color: var(--primary-color);
   position: absolute;
@@ -25,7 +37,15 @@ const sidebarStore = useSidebarStore()
   transition: 0.3s ease;
 }
 
-.shrink {
+.collapse {
   width: 50px;
+}
+
+.nav-routes {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  gap: 12px;
+  list-style: none;
 }
 </style>
