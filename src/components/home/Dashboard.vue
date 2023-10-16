@@ -13,6 +13,9 @@
       <br>
       Update your master Dexter!
     </div>
+    <div class="container">
+      <button class="btn btn-primary">Click Me</button>
+    </div>
   </div>
 </template>
 
