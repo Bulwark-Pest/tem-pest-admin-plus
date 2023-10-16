@@ -38,13 +38,4 @@ nav {
 img {
 padding: 10px;
 }
-
-a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
-a:hover {
-  color: var(--tertiary-color);
-}
 </style>

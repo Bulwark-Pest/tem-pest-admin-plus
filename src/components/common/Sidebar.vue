@@ -5,11 +5,11 @@ const sidebarStore = useSidebarStore()
 </script>
 
 <template>
-  <div class="content">
-    <div class="expand" :class="{ 'collapse': !sidebarStore.isSidebarOpen }"
+  <div class="d-flex">
+    <div :class="['sidebar position-absolute', sidebarStore.isSidebarOpen ? 'expand' : 'collapse']"
          @mouseover="!sidebarStore.isSidebarLocked && sidebarStore.setSidebarState(true)"
          @mouseout="!sidebarStore.isSidebarLocked && sidebarStore.setSidebarState(false)">
-      <div class="nav-routes">
+      <div>
         <router-link to="Test">Test</router-link>
       </div>
     </div>
@@ -17,32 +17,18 @@ const sidebarStore = useSidebarStore()
 </template>
 
 <style scoped>
-.content {
-  display: flex;
-  flex-direction: row;
-}
-
-.expand {
-  display: flex;
-  flex-direction: row;
-  width: 250px;
+.sidebar {
+  background-color: var(--background-color);
   height: 100%;
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-  position: absolute;
 
   transition: 0.3s ease;
 }
 
-.collapse {
-  width: 50px;
+.expand {
+  width: 250px;
 }
 
-.nav-routes {
-  display: flex;
-  flex: 1;
-  justify-content: flex-end;
-  gap: 12px;
-  list-style: none;
+.collapse {
+  width: 50px;
 }
 </style>
