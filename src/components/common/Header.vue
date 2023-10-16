@@ -11,9 +11,6 @@ const sidebarStore = useSidebarStore()
         <router-link to="/">
           <img src="@/assets/images/admin-logo.png" alt="Admin Logo">
         </router-link>
-        <button @click="sidebarStore.lockSidebar">
-          <i class="fa-solid fa-bars"></i>
-        </button>
       </div>
     </nav>
   </header>
@@ -22,6 +19,7 @@ const sidebarStore = useSidebarStore()
 <style scoped>
 header {
   background-color: var(--secondary-color);
+  height: 100px;
 }
 
 nav {

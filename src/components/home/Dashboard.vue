@@ -22,9 +22,8 @@
 <style scoped>
 .content {
   display: flex;
-  background-color: var(--secondary-color);
   padding: 10px;
-  height: calc(100vh - 160px);
+  height: calc(100vh - 100px);
   border-radius: 2px;
 }
 

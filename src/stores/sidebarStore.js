@@ -15,7 +15,6 @@ export const useSidebarStore= defineStore({
     },
     lockSidebar() {
       this.isSidebarLocked = !this.isSidebarLocked;
-      this.isSidebarOpen = this.isSidebarLocked;
     }
   }
 })
