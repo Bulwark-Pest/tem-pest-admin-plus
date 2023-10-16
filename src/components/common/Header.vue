@@ -1,4 +1,7 @@
 <script setup>
+import { useSidebarStore } from "@/stores/sidebarStore";
+
+const sidebarStore = useSidebarStore()
 </script>
 
 <template>
@@ -8,6 +11,9 @@
         <router-link to="/">
           <img src="@/assets/images/admin-logo.png" alt="Admin Logo">
         </router-link>
+        <button @click="sidebarStore.lockSidebar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </nav>
   </header>

@@ -5,18 +5,13 @@ const sidebarStore = useSidebarStore()
 </script>
 
 <template>
-  <div class="d-flex">
-    <div :class="['bg-white', sidebarStore.isSidebarOpen ? 'w-25' : 'w-10']"
+  <div class="content">
+    <div class="expand" :class="{ 'collapse': !sidebarStore.isSidebarOpen }"
          @mouseover="!sidebarStore.isSidebarLocked && sidebarStore.setSidebarState(true)"
          @mouseout="!sidebarStore.isSidebarLocked && sidebarStore.setSidebarState(false)">
-      <div>
+      <div class="nav-routes">
         <router-link to="Test">Test</router-link>
       </div>
-      <button v-if="sidebarStore.isSidebarOpen"
-              class="btn btn-primary position-absolute"
-              @click="sidebarStore.lockSidebar">
-        {{ sidebarStore.isSidebarLocked ? 'Unlock' : 'Lock' }}
-      </button>
     </div>
   </div>
 </template>
@@ -28,6 +23,8 @@ const sidebarStore = useSidebarStore()
 }
 
 .expand {
+  display: flex;
+  flex-direction: row;
   width: 250px;
   height: 100%;
   color: var(--secondary-color);
