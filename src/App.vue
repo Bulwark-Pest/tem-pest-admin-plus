@@ -4,9 +4,22 @@ import Sidebar from "@/components/common/Sidebar.vue";
 </script>
 
 <template>
-  <Header />
-  <Sidebar />
-  <router-view id="currentPage"/>
+  <div class="content">
+    <Header />
+    <div class="sidebar">
+      <Sidebar />
+      <router-view id="currentPage"/>
+    </div>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  display: inherit;
+}
+</style>

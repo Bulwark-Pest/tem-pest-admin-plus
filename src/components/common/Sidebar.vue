@@ -19,15 +19,21 @@ const sidebarStore = useSidebarStore()
 
 <style scoped>
 aside {
+  display: inherit;
+  flex-direction: column;
+  background-color: var(--primary-color);
   width: 250px;
-  height: calc(100vh - 100px);
-  position: absolute;
-  background-color: var(--tertiary-color);
+  height: 100vh;
+  padding: 10px;
 
   transition: 0.3s;
 }
 
 aside.expanded {
   width: 50px;
+}
+
+button {
+
 }
 </style>

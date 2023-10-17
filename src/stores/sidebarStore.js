@@ -7,9 +7,6 @@ export const useSidebarStore= defineStore({
     isSidebarLocked: false
   }),
   actions: {
-    toggleSidebar() {
-      this.isSidebarOpen = !this.isSidebarOpen
-    },
     setSidebarState(state) {
       this.isSidebarOpen = state;
     },

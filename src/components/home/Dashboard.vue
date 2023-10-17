@@ -13,9 +13,6 @@
       <br>
       Update your master Dexter!
     </div>
-    <div class="container">
-      <button class="btn btn-primary">Click Me</button>
-    </div>
   </div>
 </template>
 
@@ -23,7 +20,9 @@
 .content {
   display: flex;
   padding: 10px;
-  height: calc(100vh - 100px);
+  width: 50vw;
+  height: 100vh;
+  background-color: var(--background-color);
   border-radius: 2px;
 }
 
