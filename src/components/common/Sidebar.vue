@@ -10,10 +10,18 @@ const sidebarStore = useSidebarStore()
       @mouseout="!sidebarStore.isSidebarLocked && sidebarStore.setSidebarState(false)"
       :class="{ expanded: !sidebarStore.isSidebarOpen }"
   >
-    <router-link to="/Test">Test</router-link>
-    <button v-show="sidebarStore.isSidebarOpen" @click="sidebarStore.lockSidebar">
-      <i class="fa-solid fa-bars"></i>
+    <button @click="sidebarStore.lockSidebar">
+      <i v-if="sidebarStore.isSidebarLocked" class="fa-solid fa-lock"></i>
+      <i v-else-if="!sidebarStore.isSidebarLocked" class="fa-solid fa-lock-open"></i>
     </button>
+    <router-link to="/Test">
+      <span>
+        <i class="fa-solid fa-vial"></i>
+      </span>
+      <span>
+        Test
+      </span>
+    </router-link>
   </aside>
 </template>
 
@@ -25,15 +33,25 @@ aside {
   width: 250px;
   height: 100vh;
   padding: 10px;
+  border-right: 5px solid var(--tertiary-color);
 
   transition: 0.3s;
 }
 
 aside.expanded {
-  width: 50px;
+  width: 60px;
 }
 
 button {
+  display: flex;
+  max-width: 50px;
+  background-color: inherit;
+  border: var(--tertiary-color);
+  padding: 5px;
+  margin-left: 150px;
+}
 
+button:hover {
+  color: var(--tertiary-color);
 }
 </style>

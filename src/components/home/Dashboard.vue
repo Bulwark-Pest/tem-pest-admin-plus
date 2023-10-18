@@ -20,7 +20,7 @@
 .content {
   display: flex;
   padding: 10px;
-  width: 50vw;
+  width: 100vw;
   height: 100vh;
   background-color: var(--background-color);
   border-radius: 2px;
