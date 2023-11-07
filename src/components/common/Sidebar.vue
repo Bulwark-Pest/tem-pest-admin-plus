@@ -14,7 +14,7 @@ const sidebarStore = useSidebarStore()
       <i v-if="sidebarStore.isSidebarLocked" class="fa-solid fa-lock"></i>
       <i v-else-if="!sidebarStore.isSidebarLocked" class="fa-solid fa-lock-open"></i>
     </button>
-    <router-link to="/Test">
+    <router-link to="/Test" class="link-button">
       <span>
         <i class="fa-solid fa-vial"></i>
       </span>
@@ -32,7 +32,6 @@ aside {
   background-color: var(--primary-color);
   width: 250px;
   height: 100vh;
-  padding: 10px;
   border-right: 5px solid var(--tertiary-color);
 
   transition: 0.3s;
@@ -42,9 +41,17 @@ aside.expanded {
   width: 60px;
 }
 
+.link-button {
+  padding: 10px;
+}
+
+.link-button:hover {
+  background-color: var(--background-color);
+}
+
 button {
   display: flex;
-  max-width: 50px;
+  width: 50px;
   background-color: inherit;
   border: var(--tertiary-color);
   padding: 5px;

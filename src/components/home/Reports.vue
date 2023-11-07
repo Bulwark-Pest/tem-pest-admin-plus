@@ -5,10 +5,8 @@
 <template>
   <div class="content">
     <div class="words">
-      Who took the cookies from the cookie jar?
       <br>
-      <br>
-      Then who?
+      Wasn't me!
     </div>
   </div>
 </template>
@@ -21,6 +19,7 @@
   height: 100vh;
   background-color: var(--background-color);
   border-radius: 2px;
+
 }
 
 .words {

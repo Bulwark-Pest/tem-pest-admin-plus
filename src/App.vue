@@ -8,7 +8,7 @@ import Sidebar from "@/components/common/Sidebar.vue";
     <Header />
     <div class="sidebar">
       <Sidebar />
-      <router-view id="currentPage"/>
+      <RouterView />
     </div>
   </div>
 </template>
