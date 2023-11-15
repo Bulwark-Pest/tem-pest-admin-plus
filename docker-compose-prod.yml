@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  vue-ui:
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - "8010:8010"
+    container_name: vue-ui
+    volumes:
+      - .:/code
+      - '/code/node_modules'
+    stdin_open: true
+    tty: true
+

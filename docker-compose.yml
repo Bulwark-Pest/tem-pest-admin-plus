@@ -1,0 +1,23 @@
+version: '3.7'
+services:
+  vue-ui:
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - "8010:8010"
+    container_name: vue-ui
+    volumes:
+      - .:/code
+      - '/code/node_modules'
+    stdin_open: true
+    tty: true
+  mockup-server:
+    build:
+      dockerfile: ./mockup/Dockerfile-mockup-server
+    container_name: mockup-server
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./mockup/cache:/usr/src/app/cache
+      - '/usr/src/app/node_modules'
+
