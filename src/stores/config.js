@@ -1,0 +1,62 @@
+const PRODUCTION_DOMAIN = 'https://vue.tem-pest.com/';
+const TESTING_DOMAIN    = 'https://test.tem-pest.com/';
+const LOCAL_DOMAIN      = 'https://app.localhost:4443/';
+export const ENV = {
+    TEST_ENV: true,
+    MOSQUITO_CONTROL_UI: true,
+    DISPLAY_WCSA_DASHBOARD: true,
+    MESSAGE_HISTORY_UI: true,
+    PHONE_HISTORY_UI:false,
+    SETUP_BAIT_STATIONS_UI: true,
+    GOOGLE_API_KEY: 'YOUR_GOOGLE_API_KEY',
+    WEBSOCKET_URL: 'ws://app.localhost:3030',
+    SHOW_MESSENGER: true,
+    SHOW_PREVIOUS_CALL: false,
+    SHOW_TRAINING_CENTER: false,
+    SHOW_SMS_UPLOAD_FEATURE: false,
+}
+
+export const useConfigStore = () => {
+
+    const isProductionServer = false;// Server is working on vue.test-tempest.com
+    const isTestingServer = true;// Server is working on test.test-tempest.com
+    const isLocalServer = false; // Local server - Docker on localhost
+
+    const fetchProductionDomain = () => {
+        return PRODUCTION_DOMAIN;
+    };
+    const fetchTestingDomain = () => {
+        return TESTING_DOMAIN;
+    };
+    const fetchLocalDomain = () => {
+        return LOCAL_DOMAIN;
+    };
+
+    return {
+        fetchServerConfig: (isAsteriskApi = false) => {
+            let serverConfig='';
+            if (isProductionServer === true && isTestingServer === false && isLocalServer === false) {
+                serverConfig = fetchProductionDomain();
+            }
+            else if (isTestingServer === true && isProductionServer === false && isLocalServer === false) {
+                serverConfig = fetchTestingDomain();
+            }
+            else if(isLocalServer === true && isProductionServer === false && isTestingServer === false) {
+                serverConfig = (isAsteriskApi === false) ? fetchLocalDomain() : fetchTestingDomain();
+            }
+            else { // Any other case use test server
+                serverConfig = fetchTestingDomain();
+            }
+            return serverConfig;
+        },
+        fetchProductionDomain: () => {
+            return PRODUCTION_DOMAIN;
+        },
+        fetchTestingDomain: () => {
+            return TESTING_DOMAIN;
+        },
+        fetchLocalDomain: () => {
+            return LOCAL_DOMAIN;
+        },
+    } // Local server - Docker on localhost
+}

@@ -1,0 +1,36 @@
+//
+// Custom Main
+//
+// Add your own styles or override existing ones
+//
+// This file is included last, so you have access
+// to all Bootstrap and OneUI functions/mixins/styles etc
+// --------------------------------------------------
+
+// If you have many custom styles, you can create and import additional files
+// For example you can create _component1.scss and include it as follows:
+// @import 'component1';
+@import 'primevue/resources/themes/viva-dark/theme.css';
+@import 'primevue/resources/primevue.min.css';
+@import 'primeicons/primeicons.css';
+.p-menu ul#overlay_menu_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.all-clicks {
+  pointer-events: all;
+}
+
+.p-component input[type=text] {
+  color: color("white");
+}
+
+.p-multiselect-panel .p-multiselect-header {
+  padding: 5px 14px;
+}
+.p-multiselect-panel .p-multiselect-items .p-multiselect-item {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+

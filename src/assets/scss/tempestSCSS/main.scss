@@ -1,0 +1,35 @@
+@import 'colors';
+@import 'breackpoints';
+@import 'mixins';
+@import 'components/base';
+@import 'components/sweetAlert';
+@import 'components/button';
+@import 'components/dropdown';
+@import 'components/inputs';
+@import 'components/checkbox';
+@import 'components/label';
+@import 'components/table';
+@import 'components/menu';
+@import 'views/header';
+@import 'views/layout';
+
+*{
+  font-family: "Heebo", sans-serif, 'primeicons';
+}
+
+@each $key, $color in $tp-colors{
+  .c-#{$key}{
+    color: $color !important;
+  }
+  .bg-#{$key}{
+    background-color: $color !important;
+  }
+  .bc-#{$key}{
+    border-color: $color !important;
+  }
+  svg.svg-c-#{$key}{
+    path{
+      color: $color !important;
+    }
+  }
+}

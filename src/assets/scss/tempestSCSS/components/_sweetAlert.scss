@@ -1,0 +1,4 @@
+// make alerts always in front
+.swal2-container {
+  z-index: 100000;
+}

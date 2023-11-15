@@ -1,0 +1,23 @@
+$tp-colors:(
+  'yellow': yellow,
+  'yellow-lite': #ffe15c,
+  'yellow-light': #ffd208,
+  'yellow-dark': #e0b700,
+  'red-danger': #dc2626,
+  'green-success': #65a30d,
+  'green-light': #006834 ,
+  'green-dark': #004C26,
+  'white': white,
+  'black': black,
+  'grey': grey,
+  'blue-light':#6593b0,
+  'blue': rgb(9,77,171),
+  'claret':rgb(116, 17, 46),
+  'claret-light':#8f4a5e,
+  'black-transparent':rgba(0, 0, 0, 0.2705882353),
+);
+
+@function color($colorName){
+  @return map-get($tp-colors, $colorName);
+}
+

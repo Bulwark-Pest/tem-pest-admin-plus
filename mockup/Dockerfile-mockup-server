@@ -1,0 +1,12 @@
+FROM node:14
+
+WORKDIR /usr/src/app
+
+COPY ./mockup/package*.json ./
+RUN npm install
+
+COPY ./mockup .
+
+EXPOSE 3000
+
+CMD [ "node", "mockup-server.js" ]

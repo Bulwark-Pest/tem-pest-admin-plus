@@ -1,0 +1,20 @@
+//
+// Custom Variables
+//
+// Here you can add your own variables overrides
+//
+// The file is included before any other variable file,
+// so you can override them because they all use !default
+// --------------------------------------------------
+
+// For example, changing the primary color
+// $primary: #a48ad4;
+$sidebar-dark-bg: #0E2F1C;
+$footer-bg: #1A3B20;
+$footer-color: #1A3B20;
+#page-footer {
+  background: $footer-bg;
+  .bg-body-light {
+    background-color: $footer-bg!important;
+  }
+}

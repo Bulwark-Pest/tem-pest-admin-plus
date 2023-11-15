@@ -1,0 +1,25 @@
+.p-datatable.tp-endeavor-routes-table{
+  .p-datatable-loading-overlay{
+    background: #fff !important;
+    opacity: 0.8;
+  }
+  .p-datatable-header{
+    background: #fff !important;
+  }
+  .p-datatable-wrapper .p-datatable-tbody .p-datatable-emptymessage{
+    background: #fff !important;
+  }
+
+  .p-datatable-table{
+    background: #fff !important;
+
+  }
+  .p-paginator-bottom .p-paginator{
+    background: #fff !important;
+    border: none;
+  }
+  .p-sortable-column, .cell-body-no-padding{
+    background: #fff !important;
+
+  }
+}

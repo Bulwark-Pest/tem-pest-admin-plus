@@ -1,0 +1,26 @@
+.p-checkbox .p-checkbox-box {
+  border-color: color('claret');
+  &.p-highlight {
+    background: color('claret');
+    border-color: color('claret');
+    path {
+      color: color("yellow") !important;
+    }
+  }
+}
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box {
+  &.p-highlight:hover {
+    background: color('claret');
+    border-color: color('claret');
+  }
+  &.p-focus {
+    box-shadow: 0 0 0 1px color('claret');
+    border-color: color('claret');
+  }
+#modal-block-extra-large-search .p-component, .p-component svg path {
+  color: color("yellow") !important;
+}
+}
+.p-checkbox-icon {
+  color: color('white');
+}

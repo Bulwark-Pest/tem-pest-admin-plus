@@ -1,0 +1,8 @@
+#page-container{
+  transition: all 0.5s;
+  &.slice-left{
+    @include ml{
+      padding-right: 350px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.tp-btn-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  min-height: 40px;
+  min-width: 40px;
+
+}
+.tp-btn{
+  all:unset;
+}
+.tp-btn-menu-icon{
+  font-size: 24px !important;
+  padding: 5px;
+  transition: all 0.3s;
+  color: color('white');
+  &:hover{
+    color: transparentize($color: color('white'), $amount: 0.2);
+  }
+  // &:focus{
+  //   color: transparentize($color: color('white'), $amount: 0.4);
+  // }
+}
+.tp-btn-table-option{
+  @extend .tp-btn-icon;
+  border-radius: 50%;
+  min-width: 35px;
+  min-height: 35px;
+  max-width: 35px;
+  max-height: 35px;
+  height: 35px;
+  width: 100%;
+  &:disabled{
+    background-color: color('grey') !important;
+    opacity: 0.9 !important;
+    border-color: color('grey') !important;
+  }
+}
+

@@ -1,0 +1,100 @@
+//
+// Dropdown
+// --------------------------------------------------
+
+.dropdown-menu {
+  box-shadow: $dropdown-box-shadow;
+
+  &.dropdown-menu-md {
+    min-width: 200px;
+  }
+
+  &.dropdown-menu-lg,
+  &.dropdown-menu-xl,
+  &.dropdown-menu-xxl {
+    min-width: 300px;
+  }
+
+  &.dropdown-menu-mega {
+    transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+    opacity: 0;
+    display: block;
+    visibility: hidden;
+    transform: translateY(50px);
+    transform-origin: top left;
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    &.dropdown-menu-xl {
+      min-width: 450px;
+    }
+
+    &.dropdown-menu-xxl {
+      min-width: 600px;
+    }
+  }
+}
+
+.dropdown-select{
+  border: 1px solid rgba(0, 0, 0, 0.45) !important;
+  padding-right: 0px !important;
+  height: 40px;
+  background-color: #004C26 !important;
+  border-radius: 10px !important;
+  display: flex;
+  flex-direction: row;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  .p-dropdown-label{
+    font-size: 0.78rem !important;
+    font-weight: 400;
+    text-align: start;
+    width: 80% !important;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    // padding: 0.5rem 0.1rem !important;
+    padding: 0px;
+    &.p-placeholder{
+      color: white !important;
+    }
+  }
+  .p-dropdown-trigger-icon{
+    display: none;
+  }
+  .p-dropdown-trigger{
+    &::after{
+      content: ' ';
+      display: block;
+      width: 13px;
+      height: 13px;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+    }
+  }
+}
+
+.p-dropdown-panel{
+  background-color: #004C26 !important;
+  &.p-component{
+    z-index: 2000 !important;
+  }
+  .p-dropdown-items {
+    padding: 0.2rem !important;
+    margin-bottom: 0px !important;
+    .p-dropdown-item{
+      font-size: 0.78rem !important;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+      padding: 0.4rem 0.6rem !important;
+      color: color('white');
+      margin-bottom: 2px;
+      &:hover{
+        background: rgba(60, 60, 63, 0.815) !important;
+      }
+    }
+  }
+}
