@@ -8,6 +8,7 @@ import App from "./App.vue";
 import PrimeVue from "primevue/config";
 import Toast from "primevue/toast";
 import { useResizeStore } from "@/stores/resizeStore";
+import GoogleSignInPlugin from "vue3-google-signin";
 
 import 'video.js/dist/video-js.css';
 // Template components
@@ -47,6 +48,10 @@ function round(num, decimalPlaces = 0) {
     num = Math.round(num + "e" + decimalPlaces);
     return Number(num + "e" + -decimalPlaces);
 }
+
+app.use(GoogleSignInPlugin, {
+    clientId: '909185908730-nbfaj37hkqu5ed3ttfo0bcr2iea7cbiq.apps.googleusercontent.com',
+});
 
 app.config.globalProperties.$filters = {
     currencyUSD(value, decimalPlaces = 0) {
