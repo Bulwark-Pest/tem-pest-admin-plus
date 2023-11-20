@@ -18,8 +18,9 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 
-$primary: #4c78dd !default;
-$secondary: #475569 !default;
+$primary: #293a50 !default;
+$secondary: #f5f5f5 !default;
+$tertiary: #e8a621 !default;
 $success: #65a30d !default;
 $info: #0891b2 !default;
 $warning: #ea580c !default;
@@ -30,6 +31,7 @@ $dark: #334155 !default;
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
+  "tertiary": $tertiary,
   "success": $success,
   "info": $info,
   "warning": $warning,

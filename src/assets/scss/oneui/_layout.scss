@@ -1,7 +1,7 @@
 //
 // Layout
 // --------------------------------------------------
-@import "src/assets/scss/custom/_variables.scss";
+@import "src/assets/scss/oneui/variables-bootstrap.scss";
 body {
   background-size: cover!important;
   background-position: center center!important;
@@ -115,9 +115,9 @@ body {
   padding: 5px 10px;
 }
 .backgroundBlack {
-  background: $dark-bg;
+  background: $primary;
   padding:5px;
-  border-radius:0px;
+  border-radius:0;
 }
 .backgroundBlack ul li {
   list-style: none;
@@ -125,10 +125,10 @@ body {
 .backgroundTheme {
   color:#ffffff;
   padding:8px;
-  background: $dark-bg;
+  background: $primary;
 }
 .backgroundTheme2 .f2 {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   display: block;
 }
 .backgroundTheme2 {
@@ -152,7 +152,7 @@ body {
   background-image: url("/src/assets/image/backgroundCoverUser.jpg");
   width: 60px;
   position: absolute;
-  left: 0px;
+  left: 0;
   height: 60px;
   clip-path: polygon(0% 0%, 90% 0%, 50% 100%, 0% 100%);
   background-size: 190px;
@@ -162,7 +162,7 @@ body {
 .listBoxRight {
   width: 100%;
   position: absolute;
-  right: 0px;
+  right: 0;
   height: 60px;
   padding: 5px;
 }
@@ -182,12 +182,12 @@ body {
   position: absolute;
   width: 100%;
   height: 50px;
-  left: 0px;
+  left: 0;
   padding-left: 70px;
   padding-right: 5px;
 }
 .textListUser ul {
-  margin: 0px !important;
+  margin: 0 !important;
   position: relative;
 
 }
@@ -205,10 +205,10 @@ body {
   border-radius: 10px 10px 0 0 !important;
 }
 #page-container.page-header-fixed.sidebar-o #page-header {
-  padding-left:0px !important;
+  padding-left: 0 !important;
 }
 #page-container.page-header-fixed.sidebar-mini.sidebar-o #page-header {
-  padding-left:0px !important;
+  padding-left: 0 !important;
 }
 #page-container.page-header-fixed #page-header {
   backdrop-filter: blur(0px) !important;
@@ -235,10 +235,10 @@ body {
 }
 .mainSideLeft {
   border: 1px solid #00000045;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 0 0 10px;
   display: grid;
   align-content: center;
-  background: $dark-bg;
+  background: $primary;
 }
 .divSide img {
   position: absolute;
@@ -254,7 +254,7 @@ body {
 
   .divSide img {
     top: 32%;
-    margin: 0px;
+    margin: 0;
   }
 }
 .weeklyDiv .divSide, .monthlyDiv .divSide {
@@ -275,15 +275,14 @@ body {
   //background-color: #f1f1f1;
   width: 40px;
   height: 40px;
-  border: 1px solid #ccc;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   cursor: move;
-  border:1px solid red;
+  border: 1px solid red;
 }
 .divBackgroundTextarea {
   ul {
-    padding: 0px !important;
-    margin: 0px !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
   li {
     list-style: none;
@@ -316,23 +315,23 @@ table thead, table tbody {
 
 .table td a {
   font-size: 12px;
-  color: #9bcf09;
+  color: $tertiary;
 }
 .table td {
   vertical-align: middle !important;
   font-size: 12px;
 }
 .salesStatus {
-  background: $dark-bg;
+  background: $primary;
   padding: 10px;
   border: 1px solid #00000045;
   border-radius: 10px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 0;
+  margin-right: 0;
 }
 .mainSideRight {
   background: #00000045;
-  padding: 10px 0px;
+  padding: 10px 0;
   border: 1px solid #00000045;
   border-radius: 0 10px 10px 0;
   //border-left:none;
@@ -355,7 +354,7 @@ table thead, table tbody {
 .linkRightIcons svg {
   width: 22px;
   height: 22px;
-  fill: #ecfb00;
+  fill: $tertiary;
   position: relative;
   top: 3px;
 }
@@ -389,38 +388,38 @@ table thead, table tbody {
 }
 .customRightLeadsToCall {
   border-radius: 10px;
-  background: $dark-bg;
-  margin: 0px;
+  background: $primary;
+  margin: 0;
   padding: 20px;
   height: 100%;
   display: grid;
   align-content: center;
 }
 .mainSideRight .divSide  {
-  padding-top:0px;
+  padding-top: 0;
   //padding-bottom:10px;
   //border-bottom: 1px solid #385438;
 }
 .mainSideRight .divSide {
   border: none;
-  padding:0px;
+  padding: 0;
   /*padding-bottom:15px;
   padding-top:15px;*/
   font-size: 11px;
   border-bottom: 1px solid #00000045;
 }
 .border-bottom {
-  border-bottom:1px solid #00000045 !important;
+  border-bottom: 1px solid #00000045 !important;
 }
 .pl-0 {
-  padding-left:0px;
+  padding-left: 0;
 }
 .pr-0 {
-  padding-right:0px;
+  padding-right: 0;
 }
 .f2-title {
   font-family: 'Oswald', sans-serif !important;
-  font-size:20px;
+  font-size: 20px;
 }
 .f2 {
   font-family: 'Oswald', sans-serif !important;
@@ -457,13 +456,13 @@ table thead, table tbody {
   margin-bottom: -1px;
 }
 .mainTitle h1 {
-  padding:0px;
-  margin:0px;
+  padding: 0;
+  margin: 0;
   font-size:15px;
 }
 .mainBody {
   border: 1px solid #00000045;
-  padding: 0px;
+  padding: 0;
   border-radius: 0 0 10px 10px;
 }
 .mainBody .mainTitle h1 {
@@ -483,7 +482,7 @@ table thead, table tbody {
   //overflow:hidden;
 }
 .mainFooter ul {
-  padding: 0px;
+  padding: 0;
   margin-left: 10px;
   margin-right:10px;
   list-style: decimal;
@@ -510,7 +509,7 @@ html,body {
 }
 .dropdown-menu.dropdown-menu-md {
   min-width: 200px;
-  background: $dark-bg;
+  background: $primary;
   color: #fff;
 }
 .dropdown-divider {
@@ -518,7 +517,7 @@ html,body {
 }
 .bg-body-light {
   background-color: #122412 !important;
-  border-bottom: 1px solid $dark-bg !important;
+  border-bottom: 1px solid $primary !important;
 }
 .dropdown-item .fs-sm {
   font-size: 12px !important;
@@ -529,7 +528,7 @@ html,body {
   border-radius:100px !important;
 }
 header #page-header-user-dropdown {
-  background: $dark-bg;
+  background: $primary;
   width: auto;
   min-width: 140px;
   height: 45px;
@@ -545,22 +544,21 @@ header #page-header-user-dropdown {
   right: -5px;
 }
 .tab-pane {
-  padding:0px;
+  padding: 0;
 }
 .customBackgroundTheme2 {
-  background: $dark-bg;
+  background: $primary;
   width: 95%;
-  margin: auto;
   position: relative;
   top: -20px;
   border-radius: 10px;
-  margin-bottom: -15px;
+  margin: auto auto -15px;
 }
 .customBackgroundTheme2 h1 .f2 {
   display: grid;
   align-content: center;
   min-height: 40px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .salesWrapper {
   text-align:center;
@@ -568,20 +566,20 @@ header #page-header-user-dropdown {
   font-size:20px;
   border-radius:10px;
   padding-bottom: 5px;
-  background:$dark-bg !important;
+  background:$primary !important;
   color:#ffffff;
 }
 .spanGoal {
   font-family: 'Oswald', sans-serif !important;
   font-size: 18px;
-  text-shadow: 0px 0px 11px #fb0c17, 0 0 11px #fb0c17;
+  text-shadow: 0 0 11px #fb0c17, 0 0 11px #fb0c17;
 }
 .sidebar-mini.sidebar-o #sidebar:not(:hover) .smini-visible {
   left: 2px;
   position: relative;
 }
 .bullet {
-  background-color: #ecfb00;
+  background-color: $tertiary;
   width: 15px;
   height: 15px;
   float: left;
@@ -590,8 +588,7 @@ header #page-header-user-dropdown {
   top: 2px;
 }
 .loadingBackWhite .loader div {
-  border: 8px solid #172812;
-  border-color: $dark-bg transparent transparent transparent !important;
+  border-color: $primary transparent transparent transparent !important;
  }
 #page-header {
   background: transparent !important;
@@ -617,33 +614,33 @@ header #page-header-user-dropdown {
   color: #ffffff ;
 }
 #page-container.page-header-fixed #main-container {
-  padding-top: 0px !important;
+  padding-top: 0 !important;
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
   color: #fff;
-  background-color: $dark-bg;
+  background-color: $primary;
   border: 1px solid transparent;
-  border-radius:0px;
+  border-radius: 0;
   font-weight: normal;
 }
 .nav-tabs-block .nav-link:hover, .nav-tabs-block .nav-link:focus {
-  color: #4c78dd;
-  background-color: #004822;
+  color: $tertiary;
+  background-color: $primary;
   //border-bottom-color: #fff !important;
-  border-radius:0px;
+  border-radius: 0;
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   isolation: isolate;
-  border: 1px solid $dark-bg !important;
-  border-radius:0px;
+  border: 1px solid $primary !important;
+  border-radius: 0;
 }
 .nav-tabs {
-  border-radius: 0px !important;
-  border-bottom: 0px solid transparent;
+  border-radius: 0 !important;
+  border-bottom: 0 solid transparent;
 }
 .nav-tabs .nav-link {
   color: #ffffff;
-  border-radius:0px;
+  border-radius: 0;
 }
 .audioContainer audio {
   max-width: 100%;
@@ -651,7 +648,7 @@ header #page-header-user-dropdown {
   margin: 0 auto;
   background-color: transparent;
   height: 30px;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0 0 10px 10px;
 }
 
 #wrapperPhoneHistoryId .sideRightText{
@@ -662,8 +659,8 @@ header #page-header-user-dropdown {
 }
 
 #wrapperPhoneHistoryId ul li {
-  border: 1px solid #004C26 !important;
-  background: #004C26;
+  border: 1px solid $primary !important;
+  background: $primary;
   color: #fff;
 
   svg {
@@ -676,7 +673,7 @@ header #page-header-user-dropdown {
 }
 .buttonBarRight {
   border-radius: 10px;
-  background: #004C26;
+  background: $primary;
   padding: 4px;
   color: #fff;
   float: right;
@@ -685,26 +682,25 @@ header #page-header-user-dropdown {
 
   ul {
     color: #ffffff;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     list-style: none;
   }
   li {
     float: left;
     margin-right: 2px;
     padding-right: 2px;
-    border-right: 1px solid $dark-bg;
+    border-right: 1px solid $primary;
   }
   a {
     color: #ffffff;
     font-size: 0.78rem;
-    padding: 5px 8px;
     margin-left: 2px;
     margin-right: 2px;
-    padding-right: 12px;
+    padding: 5px 12px 5px 8px;
 
     i {
-      margin-right: 0px !important;
+      margin-right: 0 !important;
       color: #ffffff;
       position: relative;
       top: -1px;
@@ -714,13 +710,13 @@ header #page-header-user-dropdown {
 
 }
 .buttonBarRight li:last-child {
-  margin-right:0px;
-  padding-right:0px;
-  border-right: 0px;
+  margin-right: 0;
+  padding-right: 0;
+  border-right: 0;
 }
 
 .buttonBarRight a:hover, .buttonBarRight a:focus {
-  background: $dark-bg !important;
+  background: $primary !important;
   color: #ffffff !important;
   border-radius: 10px;
   i {
@@ -785,13 +781,13 @@ header #page-header-user-dropdown {
 }
 .customBucketViewCard {
   // background: #004C26 !important;
-  padding: 8px 0px;
+  padding: 8px 0;
   border: none;
 }
 .boxMenuSearch {
   top: 65px;
   width: auto;
-  right: 0px;
+  right: 0;
   display: flex;
 }
 .searchBucket {
@@ -820,8 +816,8 @@ header #page-header-user-dropdown {
   border-radius: 10px;
   border: transparent;
   padding: 2px;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  right: 0;
   margin: auto;
   width: 300px;
   margin-right:10px;
@@ -838,12 +834,12 @@ header #page-header-user-dropdown {
 }
 #sideOverlayId {
   position: relative;
-  left: 0px;
+  left: 0;
   top: 2px;
   margin-right: 5px;
 }
 .wrapperPhoneHistory {
-  background: #004C26;
+  background: $primary;
   border-radius: 10px;
   margin-bottom: 10px;
   padding: 5px;
@@ -857,13 +853,13 @@ header #page-header-user-dropdown {
 }
 
 #page-container.sidebar-dark #sidebar .content-header {
-  background-color: $dark-bg !important;
+  background-color: $primary !important;
 }
 * {
   font-family: 'Heebo', sans-serif;
 }
 .nav-main-link.active, .buttonBarRight .active {
-  background: $dark-bg !important;
+  background: $primary !important;
 }
 .nav-main-dark .nav-main-link, .sidebar-dark #sidebar .nav-main-link, .page-header-dark #page-header .nav-main-link i {
   font-size: 15px;
@@ -876,30 +872,30 @@ header #page-header-user-dropdown {
   position: relative;
 }
 .mainSideRight .divLine:last-child {
-  border-bottom: 0px;
+  border-bottom: 0;
   margin-bottom: -2px;
   padding-bottom: 0;
 }
 .divLine {
   border-bottom: 1px solid #00000045;
-  border-left: 0px;
-  border-right: 0px;
+  border-left: 0;
+  border-right: 0;
   padding: 8px;
 }
 .pagination {
-  padding:0px !important;
-  margin:0px !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .pagination li a {
   background-color: transparent !important;
 }
 .pagination .page-link {
-  border: 0px;
+  border: 0;
   color:#ffffff;
   background: transparent !important;
 }
 .pagination .active .page-link {
-  background:#9BCF09 !important;
+  background: $tertiary !important;
   border-radius:100px !important;
 }
 .mainFooter ul.pagination {
@@ -907,15 +903,15 @@ header #page-header-user-dropdown {
 }
 .mainFooter select {
   appearance: none;
-  background-color: #004C26 !important;
-  color: #b9b9b9;
+  background-color: $primary !important;
+  color: $secondary;
   border: 1px solid #00000045;
   border-radius: 10px;
   height: 40px;
 }
 @-moz-document url-prefix() {
   .mainFooter select {
-    color: #b9b9b9;
+    color: $secondary;
   }
 }
 .mainFooter select option {
@@ -928,13 +924,13 @@ header #page-header-user-dropdown {
 .customInputCalendar {
   background: transparent;
   border: none;
-  padding: 0px;
+  padding: 0;
 }
 .backgroundHarpGreen {
-  background: #f3f8f5 !important;
+  background: $secondary !important;
 }
 .backgroundGreen {
-  background:$dark-bg;
+  background:$primary;
 }
 .backgroundDarkGreen {
   background: #00000045 !important;
@@ -957,7 +953,7 @@ header #page-header-user-dropdown {
   color:#ffffff;
 }
 .backgroundTheme .block-rounded {
-  margin-bottom:0px !important;
+  margin-bottom: 0 !important;
 }
 .gg-select  {
   margin: auto;
@@ -967,7 +963,7 @@ header #page-header-user-dropdown {
   float:none;
 }
 table .btn-link {
-  color: #9BCF09;
+  color: $tertiary;
   font-weight: bolder;
 }
 table .btn-link:hover {
@@ -977,16 +973,15 @@ table .rounded-pill {
   text-transform:uppercase;
 }
 .rounded-pill {
-  background-color: #1B381B !important;
+  background-color: $primary !important;
   font-size: 11px;
-  border: 1px solid #122412;
+  border: 1px solid $black;
 }
 .weatherWrapper {
-  margin: auto;
   width: 100%;
-  border-radius: 0px;
+  border-radius: 0;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin: auto auto 10px;
 }
 .backBlackText {
   color: #ffffff;
@@ -1018,8 +1013,8 @@ table .rounded-pill {
   background: #0000008c;
   height: 100vh;
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100vw;
   z-index: 10000000;
   align-content: center;
@@ -1084,7 +1079,7 @@ table .rounded-pill {
 }
 .customBorderRadiusP0 {
   border-radius: 10px !important;
-  padding: 0px !important;
+  padding: 0 !important;
   overflow: hidden;
 }
 .customButtonEdit {
@@ -1136,8 +1131,8 @@ table .rounded-pill {
 .customButtonEdit button {
   width: 37px;
   text-align: center;
-  margin: 0px;
-  padding: 7px 0px;
+  margin: 0;
+  padding: 7px 0;
 }
 small, .small {
   font-size: 12px;
@@ -1148,17 +1143,17 @@ small, .small {
   font-size: 12px;
   padding-top: 4px;
   font-weight: bolder;
-  color: #ecfb00 !important;
+  color: $tertiary !important;
 }
 .block.block-rounded {
-  margin-bottom:0px !important;
+  margin-bottom: 0 !important;
 }
 .block-header-default {
-  background-color: $dark-bg !important;
+  background-color: $primary !important;
   color: #ffffff;
 }
 .modal-dialog .block-header-default {
-  background-color: $dark-bg !important;
+  background-color: $primary !important;
   color: #ffffff;
   padding: 15px;
   border: 1px solid #00000045;
@@ -1168,10 +1163,10 @@ small, .small {
   font-size:15px !important;
 }
 .nav-tabs-block {
-  background: $dark-bg !important;
+  background: $primary !important;
 }
 .customNavActivity .nav-link.active{
-  background: $dark-bg !important;
+  background: $primary !important;
   color:#ffffff;
 }
 //.customNavActivity .nav-link {
@@ -1181,7 +1176,7 @@ small, .small {
   background-color: #00000045 !important;
 }
 .modal-dialog .block-content {
-  background-color: $dark-bg !important;
+  background-color: $primary !important;
   padding: 15px;
   overflow: hidden;
   border: 1px solid #00000045;
@@ -1237,7 +1232,7 @@ small, .small {
     right: 50%;
   }
   100% {
-    right: 0px;
+    right: 0;
   }
 }
 
@@ -1253,7 +1248,7 @@ small, .small {
   color:#ffffff;
 }
 .modal-dialog input, .modal-dialog select, .modal-dialog textarea {
-  background-color: #004C26 !important;
+  background-color: $primary !important;
   color: #ffffff !important;
   border: 1px solid #00000095;
   border-radius: 10px;
@@ -1322,13 +1317,13 @@ small, .small {
   z-index:9999 !important;
 }
 .p-multiselect-panel .p-multiselect-header {
-  background-color: $dark-bg !important;
+  background-color: $primary !important;
   color:#ffffff;
   border: 1px solid #00000045;
   padding: 5px 18px;
 }
 .p-multiselect-items-wrapper {
-  background-color: $dark-bg !important;
+  background-color: $primary !important;
   color:#ffffff;
 }
 .p-multiselect-items-wrapper li span {
@@ -1336,12 +1331,12 @@ small, .small {
   font-size: 12px;
 }
 .p-multiselect-panel .p-multiselect-items {
-  padding:0px !important;
+  padding: 0 !important;
   background: #00000045;
 }
 .p-multiselect-panel .p-multiselect-items .p-multiselect-item:not(.p-highlight):not(.p-disabled):hover {
   color: #ffffff;
-  background: $dark-bg;
+  background: $primary;
 }
 .customLoginGoogle {
   border-radius: 5px;
@@ -1352,7 +1347,7 @@ small, .small {
   border-radius:10px;
 }
 .p-multiselect-panel .p-multiselect-items .p-multiselect-item.p-highlight {
-  color: #4338CA;
+  color: $primary;
   background: #00000045 !important;
 }
 .form-control:disabled {
@@ -1397,7 +1392,7 @@ small, .small {
 }
 
 .swal2-popup {
-  background-color: $dark-bg !important;
+  background-color: $primary !important;
   border: 1px solid #00000045 !important;
   color: #ffffff;
   padding: 15px;
@@ -1413,8 +1408,8 @@ small, .small {
     box-shadow: 0 0 2px color('yellow') !important;
   }
   .swal2-validation-message{
-    background-color: $dark-bg !important;
-    margin-top: 0px;
+    background-color: $primary !important;
+    margin-top: 0;
     color: color('yellow');
     font-size: 12px;
     margin-left: 2em;
@@ -1424,7 +1419,7 @@ small, .small {
     padding-top: 5px;
     justify-content: start;
     &::before{
-      background-color: rgb(184, 184, 78);
+      background-color: $tertiary;
     }
   }
 }
@@ -1474,7 +1469,7 @@ small, .small {
   align-content: center;
 }
 .card-body .card-title {
-  color: #ecfb00;
+  color: $tertiary;
 }
 .card-text {
   font-size:12px !important;
@@ -1489,7 +1484,7 @@ small, .small {
 }
 .p-datepicker:not(.p-datepicker-inline) .p-datepicker-header,
 .p-datepicker table , .p-datepicker:not(.p-datepicker-inline) {
-  background: $dark-bg;
+  background: $primary;
 }
 .p-datepicker .pi {
   font-size: 12px;
@@ -1499,7 +1494,7 @@ small, .small {
   color:#ffffff !important;
 }
 .p-datepicker:not(.p-disabled) table td span:not(.p-highlight):not(.p-disabled):hover {
-  background: #004522;
+  background: $primary;
   color: #fff;
 }
 .p-datepicker table td > span.p-highlight {
@@ -1527,10 +1522,10 @@ small, .small {
   color:#ffffff !important;
 }
 .p-multiselect-panel .p-multiselect-items .p-multiselect-item:not(.p-highlight):not(.p-disabled):hover {
-  background:$dark-bg !important;
+  background:$primary !important;
 }
 .p-multiselect-panel .p-multiselect-items .p-multiselect-item {
-  background:$dark-bg !important;
+  background:$primary !important;
   border-radius:5px;
   height:44px;
 }
@@ -1553,7 +1548,7 @@ small, .small {
   padding-right: 10px !important;
 }
 #sidebar:hover {
-  box-shadow: 0px 0px 10px 5px #0000005c;
+  box-shadow: 0 0 10px 5px #0000005c;
   //background: #004622;
 }
 .nav-main-link .nav-main-link-icon {
@@ -1571,14 +1566,14 @@ small, .small {
   margin-right: 5px;
 }
 .simplebar-content-wrapper {
-  background: #004C26;
+  background: $primary;
   color:#ffffff;
 }
 #side-overlay .simplebar-content-wrapper {
   background: #f3f8f5;
 }
 .block-title {
-  background: $dark-bg;
+  background: $primary;
   color:#ffffff;
 }
 .nav-tabs-block .nav-link:hover{
@@ -1586,7 +1581,7 @@ small, .small {
 }
 .nav-tabs-block .nav-link.active:hover {
   color:#ffffff ;
-  background: #004C26 !important;
+  background: $primary !important;
 }
 .p-autocomplete-panel {
   z-index: 30000!important;
@@ -1599,7 +1594,7 @@ small, .small {
   padding: 2px 15px;
   border-radius: 100px;
   border: none;
-  background:$dark-bg;
+  background:$primary;
   color: #ffffff;
 }
 .titleChatSMS {
@@ -1624,8 +1619,8 @@ small, .small {
   overflow:hidden !important;
 }
 .wrapperChatMessage .item-cloned:last-child {
-  padding-bottom:0px;
-  margin-bottom:0px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 #modal-block-extra-large-search .p-datatable-header, #modal-block-extra-large-search  .p-datatable .p-datatable-tbody > tr {
@@ -1638,20 +1633,19 @@ small, .small {
 }
 #modal-block-extra-large-search .p-datatable .p-datatable-tbody > tr > td {
   text-align: left;
-  border: 1px solid #26323824;
   border-width: 0 0 1px 0;
   padding: 1rem 1rem;
 }
 #modal-block-extra-large-search .p-datatable-header {
-  padding-top: 0px;
-  padding-left: 0px;
+  padding-top: 0;
+  padding-left: 0;
 }
 #modal-block-extra-large-search .p-inputtext {
   background: #fff !important;
   color: #000 !important;
   font-size: 16px;
   height: 46px;
-  border: 1px solid $dark-bg;
+  border: 1px solid $primary;
 }
 #modal-block-extra-large-search .p-dropdown {
   color: #000000;
@@ -1665,19 +1659,19 @@ small, .small {
   color:#000000
 }
 #modal-block-extra-large-search .p-paginator .p-paginator-pages .p-paginator-page:not(.p-highlight){
-  color: $dark-bg;
-  border: 1px solid $dark-bg;
+  color: $primary;
+  border: 1px solid $primary;
   border-radius: 60px;
 }
 #modal-block-extra-large-search .p-paginator .p-paginator-pages .p-paginator-page:not(.p-highlight):hover{
-  color: $dark-bg;
-  border: 1px solid $dark-bg;
+  color: $primary;
+  border: 1px solid $primary;
   background: #F0F7DC;
 }
 
 #modal-block-extra-large-search .p-paginator .p-paginator-first, .p-paginator .p-paginator-prev, .p-paginator .p-paginator-next, .p-paginator .p-paginator-last {
-  color: $dark-bg;
-  border: 1px solid $dark-bg;
+  color: $primary;
+  border: 1px solid $primary;
   border-radius: 60px;
 }
 #modal-block-extra-large-search .table-hover > tbody > tr:hover > * {
@@ -1689,8 +1683,8 @@ small, .small {
 }
 #modal-block-extra-large-search .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
   color: #fff;
-  border: 1px solid $dark-bg;
-  background: $dark-bg;
+  border: 1px solid $primary;
+  background: $primary;
   border-radius: 60px;
 }
 #modal-block-extra-large-search .p-datatable .p-sortable-column.p-highlight .p-sortable-column-icon {
@@ -1700,15 +1694,15 @@ small, .small {
   color: #000000;
 }
 #modal-block-extra-large-search .p-paginator .p-paginator-first:not(.p-disabled):not(.p-highlight):hover, .p-paginator .p-paginator-prev:not(.p-disabled):not(.p-highlight):hover, .p-paginator .p-paginator-next:not(.p-disabled):not(.p-highlight):hover, .p-paginator .p-paginator-last:not(.p-disabled):not(.p-highlight):hover {
-  color: $dark-bg;
-  border: 1px solid $dark-bg;
+  color: $primary;
+  border: 1px solid $primary;
   background: #F0F7DC;
 }
 #modal-block-extra-large-search .p-component, .p-component * {
   color: #000000;
 }
 #modal-block-extra-large-search .p-component, .p-component svg path {
-  color:$dark-bg !important;
+  color:$primary !important;
 }
 #modal-block-extra-large-search  .p-dropdown-panel{
   //position: absolute;
@@ -1782,7 +1776,7 @@ small, .small {
     clear:both;
   }
   .chat-bubble {
-    //background-color: $dark-bg;
+    //background-color: $primary;
     color: #ffffff;
     padding: 10px;
     border-radius: 10px;
@@ -1798,7 +1792,7 @@ small, .small {
     margin-bottom: 10px;
 
     .chat-header {
-      border-radius: 15px 15px 15px 0px !important;
+      border-radius: 15px 15px 15px 0 !important;
       background: transparent !important;
       float: left;
       padding: 5px;
@@ -1826,8 +1820,8 @@ small, .small {
       clear: both;
 
       .chat-bubble {
-        border-radius:0px 15px 15px 15px !important;
-        background:#ecfb00 !important;
+        border-radius: 0 15px 15px 15px !important;
+        background: $tertiary !important;
         color: #000000;
         max-width: 100%;
         float: left;
@@ -1839,7 +1833,7 @@ small, .small {
       .chat-status-ok {
         //border: 2px solid green;
         border-radius: 60px;
-        color: green;
+        color: $success;
         position: absolute;
         right: -22px;
         bottom: 4px;
@@ -1857,7 +1851,7 @@ small, .small {
       .chat-status-fail {
         //border: 2px solid red;
         border-radius: 60px;
-        color: red;
+        color: $danger;
         position: absolute;
         right: -22px;
         bottom: 4px;
@@ -1868,8 +1862,8 @@ small, .small {
         display: grid;
         align-content: center;
         i {
-          padding:0px;
-          margin:0px;
+          padding: 0;
+          margin: 0;
         }
       }
     }
@@ -1913,8 +1907,8 @@ small, .small {
       clear: both;
 
       .chat-bubble {
-        border-radius: 15px 0px 15px 15px !important;
-        background:$dark-bg !important;
+        border-radius: 15px 0 15px 15px !important;
+        background:$primary !important;
         max-width: 100%;
         float: right;
         clear:both;
@@ -1925,7 +1919,7 @@ small, .small {
       .chat-status-ok {
         //border: 2px solid green;
         border-radius: 60px;
-        color: green;
+        color: $success;
         position: absolute;
         left: -22px;
         bottom: 4px;
@@ -1936,14 +1930,14 @@ small, .small {
         display: grid;
         align-content: center;
         i {
-          padding:0px;
-          margin:0px;
+          padding: 0;
+          margin: 0;
         }
       }
       .chat-status-fail {
         //border: 2px solid red;
         border-radius: 60px;
-        color: red;
+        color: $danger;
         position: absolute;
         left: -22px;
         bottom: 4px;
@@ -1954,8 +1948,8 @@ small, .small {
         display: grid;
         align-content: center;
         i {
-          padding:0px;
-          margin:0px;
+          padding: 0;
+          margin: 0;
         }
       }
 
@@ -2074,7 +2068,7 @@ textarea.autoHeight {
 }
 .form-control.error,
 .form-select.error {
-    border: 1px solid red;
+    border: 1px solid $danger;
 }
 #modal-block-extra-large-search .p-component .p-datepicker-calendar,
 .p-component .p-datepicker-calendar * {
@@ -2093,7 +2087,7 @@ tr.isEarlyFast50.future_route, tr.isLateFast50.future_route  {
     background: #00CED1;
 }
 input#priceZone.Infinity {
-    color: red!important;
+    color: red !important;
     font-weight: bold;
 }
 
@@ -2110,14 +2104,14 @@ input#priceZone.Infinity {
   color: #000;
   font-size: 12px;
   border: 1px solid #EEEEEE;
-  border-radius: 7px 7px 0px 0;
-  margin-bottom: 0px;
+  border-radius: 7px 7px 0 0;
+  margin-bottom: 0;
 
   span {
     font-weight: 500;
     font-size: 12px;
     font-family: "Heebo";
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -2131,16 +2125,16 @@ input#priceZone.Infinity {
   color: #000;
   font-size: 12px;
   border: 1px solid #EEEEEE;
-  border-radius: 0px 0 7px 7px ;
+  border-radius: 0 0 7px 7px ;
   margin-top: -1px;
 }
 
 .headerSky {
-  background: #00506885 !important;
+  background: $primary !important;
 }
 
 .headerGreen {
-  background: $dark-bg !important;
+  background: $primary !important;
 }
 
 
@@ -2155,12 +2149,12 @@ input#priceZone.Infinity {
   overflow-y: auto;
   padding:10px;
   height: 100%;
-  --sb-track-color: #004C26;
-  --sb-thumb-color: #003a1d;
+  --sb-track-color: $primary;
+  --sb-thumb-color: $primary;
   --sb-size: 10px;
   scrollbar-width: thin;
   scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
-  border-bottom: 0px !important;
+  border-bottom: 0 !important;
   // box-shadow: 1px 2px 35px -4px rgba(41,41,41,0.77);
   // -webkit-box-shadow: 1px 2px 35px -4px rgba(41,41,41,0.77);
   // -moz-box-shadow: 1px 2px 35px -4px rgba(41,41,41,0.77);
@@ -2175,7 +2169,7 @@ input#priceZone.Infinity {
 }
 
 .buttonSendCT {
-  background: #4CAF50;
+  background: $tertiary;
   padding: 10px;
   width: 100%;
   border: none;
@@ -2193,7 +2187,6 @@ input#priceZone.Infinity {
   color: #4CAF50;
   padding: 10px;
   width: 100%;
-  border: none;
   border-radius: 6px;
   font-weight: bolder;
 }
@@ -2238,7 +2231,7 @@ input#priceZone.Infinity {
     height: 80px !important;
   }
 }
-@media (min-width: 0px) and (max-width: 576px) {
+@media (min-width: 0) and (max-width: 576px) {
   .mainSideLeft {
     border-radius:  10px 10px 0 0 ;
   }
@@ -2247,7 +2240,7 @@ input#priceZone.Infinity {
   }
   .buttonBarRight {
     border-radius: 10px;
-    background: #004C26;
+    background: $primary;
     padding: 4px;
     color: #fff;
   }
@@ -2265,13 +2258,12 @@ input#priceZone.Infinity {
 
     input {
       padding: 5px;
-      margin-right: 0px;
+      margin-right: 0;
       width: 100%;
     }
 
     .buttonSearch {
-      margin: auto;
-      margin-top: 5px;
+      margin: 5px auto auto;
       float: none;
       //display: none;
     }
@@ -2280,7 +2272,7 @@ input#priceZone.Infinity {
       position: absolute;
       top: 65px;
       width: auto;
-      right: 0px;
+      right: 0;
       display: flex;
     }
 
@@ -2302,7 +2294,7 @@ input#priceZone.Infinity {
     margin-bottom: 10px;
   }
   footer {
-    padding-left: 0px;
+    padding-left: 0;
   }
   .weatherWrapper {
     width: 100%;
@@ -2332,7 +2324,7 @@ input#priceZone.Infinity {
   }
   .customButtonEdit {
     float: right;
-    margin-right: 0px;
+    margin-right: 0;
   }
   .customButtonCall button{
     background: transparent;
@@ -2368,7 +2360,7 @@ input#priceZone.Infinity {
     margin: auto;
   }
   .weeklyDiv .divSide:last-child, .monthlyDiv .divSide:last-child {
-    padding: 0px 10px;
+    padding: 0 10px;
 
     img {
       top: -15px;
@@ -2398,7 +2390,7 @@ input#priceZone.Infinity {
   }
   .wrapperSearch {
     width: 30%;
-    left: 0px;
+    left: 0;
 
     input {
       width: 72%;
@@ -2428,7 +2420,7 @@ input#priceZone.Infinity {
     width: 200px;
   }
   .customRightLeadsToCall {
-    padding: 0px;
+    padding: 0;
   }
   .customRightLeadsToCall .avatarCustom {
     width: 90px;
@@ -2446,7 +2438,7 @@ input#priceZone.Infinity {
       padding: 5px;
     }
     ul li {
-      margin: 0px;
+      margin: 0;
 
     }
     i {
@@ -2460,18 +2452,15 @@ input#priceZone.Infinity {
 
 @include media-breakpoint-up(lg) {
   .divSide {
-    padding: 15px;
-    padding-left: 70px;
+    padding: 15px 15px 15px 70px;
   }
   .divSide img {
     position: absolute;
     left: 15px;
     top: 29px;
     width: 42px;
-    margin: auto;
-    margin-bottom: auto;
     display: block;
-    margin-bottom: 10px;
+    margin: auto auto 10px;
   }
   .mainSideLeft {
     border-radius:  10px 0 0 10px ;
