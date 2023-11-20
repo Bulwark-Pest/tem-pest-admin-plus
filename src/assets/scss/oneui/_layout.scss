@@ -1,6 +1,7 @@
 //
 // Layout
 // --------------------------------------------------
+@import "src/assets/scss/custom/_variables.scss";
 body {
   background-size: cover!important;
   background-position: center center!important;
@@ -114,7 +115,7 @@ body {
   padding: 5px 10px;
 }
 .backgroundBlack {
-  background: #004C26;
+  background: $dark-bg;
   padding:5px;
   border-radius:0px;
 }
@@ -124,7 +125,7 @@ body {
 .backgroundTheme {
   color:#ffffff;
   padding:8px;
-  background:#006834e8;
+  background: $dark-bg;
 }
 .backgroundTheme2 .f2 {
   margin-bottom: 0px;
@@ -237,7 +238,7 @@ body {
   border-radius: 10px 0px 0px 10px;
   display: grid;
   align-content: center;
-  background:#006834;
+  background: $dark-bg;
 }
 .divSide img {
   position: absolute;
@@ -322,7 +323,7 @@ table thead, table tbody {
   font-size: 12px;
 }
 .salesStatus {
-  background: #006834;
+  background: $dark-bg;
   padding: 10px;
   border: 1px solid #00000045;
   border-radius: 10px;
@@ -388,7 +389,7 @@ table thead, table tbody {
 }
 .customRightLeadsToCall {
   border-radius: 10px;
-  background: #006834;
+  background: $dark-bg;
   margin: 0px;
   padding: 20px;
   height: 100%;
@@ -509,7 +510,7 @@ html,body {
 }
 .dropdown-menu.dropdown-menu-md {
   min-width: 200px;
-  background: #006834;
+  background: $dark-bg;
   color: #fff;
 }
 .dropdown-divider {
@@ -517,7 +518,7 @@ html,body {
 }
 .bg-body-light {
   background-color: #122412 !important;
-  border-bottom: 1px solid #1d3c1d !important;
+  border-bottom: 1px solid $dark-bg !important;
 }
 .dropdown-item .fs-sm {
   font-size: 12px !important;
@@ -528,7 +529,7 @@ html,body {
   border-radius:100px !important;
 }
 header #page-header-user-dropdown {
-  background: #006834;
+  background: $dark-bg;
   width: auto;
   min-width: 140px;
   height: 45px;
@@ -547,7 +548,7 @@ header #page-header-user-dropdown {
   padding:0px;
 }
 .customBackgroundTheme2 {
-  background: #006834;
+  background: $dark-bg;
   width: 95%;
   margin: auto;
   position: relative;
@@ -567,7 +568,7 @@ header #page-header-user-dropdown {
   font-size:20px;
   border-radius:10px;
   padding-bottom: 5px;
-  background:#006834a6 !important;
+  background:$dark-bg !important;
   color:#ffffff;
 }
 .spanGoal {
@@ -590,7 +591,7 @@ header #page-header-user-dropdown {
 }
 .loadingBackWhite .loader div {
   border: 8px solid #172812;
-  border-color: #006834 transparent transparent transparent !important;
+  border-color: $dark-bg transparent transparent transparent !important;
  }
 #page-header {
   background: transparent !important;
@@ -620,7 +621,7 @@ header #page-header-user-dropdown {
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
   color: #fff;
-  background-color: #006834e8;
+  background-color: $dark-bg;
   border: 1px solid transparent;
   border-radius:0px;
   font-weight: normal;
@@ -633,7 +634,7 @@ header #page-header-user-dropdown {
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   isolation: isolate;
-  border: 1px solid #006834 !important;
+  border: 1px solid $dark-bg !important;
   border-radius:0px;
 }
 .nav-tabs {
@@ -692,7 +693,7 @@ header #page-header-user-dropdown {
     float: left;
     margin-right: 2px;
     padding-right: 2px;
-    border-right: 1px solid #006834;
+    border-right: 1px solid $dark-bg;
   }
   a {
     color: #ffffff;
@@ -719,7 +720,7 @@ header #page-header-user-dropdown {
 }
 
 .buttonBarRight a:hover, .buttonBarRight a:focus {
-  background: #006834 !important;
+  background: $dark-bg !important;
   color: #ffffff !important;
   border-radius: 10px;
   i {
@@ -856,13 +857,13 @@ header #page-header-user-dropdown {
 }
 
 #page-container.sidebar-dark #sidebar .content-header {
-  background-color: #006834 !important;
+  background-color: $dark-bg !important;
 }
 * {
   font-family: 'Heebo', sans-serif;
 }
 .nav-main-link.active, .buttonBarRight .active {
-  background: #006834 !important;
+  background: $dark-bg !important;
 }
 .nav-main-dark .nav-main-link, .sidebar-dark #sidebar .nav-main-link, .page-header-dark #page-header .nav-main-link i {
   font-size: 15px;
@@ -933,7 +934,7 @@ header #page-header-user-dropdown {
   background: #f3f8f5 !important;
 }
 .backgroundGreen {
-  background:#006834;
+  background:$dark-bg;
 }
 .backgroundDarkGreen {
   background: #00000045 !important;
@@ -1153,11 +1154,11 @@ small, .small {
   margin-bottom:0px !important;
 }
 .block-header-default {
-  background-color: #006834 !important;
+  background-color: $dark-bg !important;
   color: #ffffff;
 }
 .modal-dialog .block-header-default {
-  background-color: #006834 !important;
+  background-color: $dark-bg !important;
   color: #ffffff;
   padding: 15px;
   border: 1px solid #00000045;
@@ -1167,10 +1168,10 @@ small, .small {
   font-size:15px !important;
 }
 .nav-tabs-block {
-  background: #006834 !important;
+  background: $dark-bg !important;
 }
 .customNavActivity .nav-link.active{
-  background: #006834 !important;
+  background: $dark-bg !important;
   color:#ffffff;
 }
 //.customNavActivity .nav-link {
@@ -1180,7 +1181,7 @@ small, .small {
   background-color: #00000045 !important;
 }
 .modal-dialog .block-content {
-  background-color: #006834 !important;
+  background-color: $dark-bg !important;
   padding: 15px;
   overflow: hidden;
   border: 1px solid #00000045;
@@ -1321,13 +1322,13 @@ small, .small {
   z-index:9999 !important;
 }
 .p-multiselect-panel .p-multiselect-header {
-  background-color: #006834 !important;
+  background-color: $dark-bg !important;
   color:#ffffff;
   border: 1px solid #00000045;
   padding: 5px 18px;
 }
 .p-multiselect-items-wrapper {
-  background-color: #006834 !important;
+  background-color: $dark-bg !important;
   color:#ffffff;
 }
 .p-multiselect-items-wrapper li span {
@@ -1340,7 +1341,7 @@ small, .small {
 }
 .p-multiselect-panel .p-multiselect-items .p-multiselect-item:not(.p-highlight):not(.p-disabled):hover {
   color: #ffffff;
-  background: #006834a6;
+  background: $dark-bg;
 }
 .customLoginGoogle {
   border-radius: 5px;
@@ -1396,7 +1397,7 @@ small, .small {
 }
 
 .swal2-popup {
-  background-color: #006834 !important;
+  background-color: $dark-bg !important;
   border: 1px solid #00000045 !important;
   color: #ffffff;
   padding: 15px;
@@ -1412,7 +1413,7 @@ small, .small {
     box-shadow: 0 0 2px color('yellow') !important;
   }
   .swal2-validation-message{
-    background-color: #006834 !important;
+    background-color: $dark-bg !important;
     margin-top: 0px;
     color: color('yellow');
     font-size: 12px;
@@ -1488,7 +1489,7 @@ small, .small {
 }
 .p-datepicker:not(.p-datepicker-inline) .p-datepicker-header,
 .p-datepicker table , .p-datepicker:not(.p-datepicker-inline) {
-  background: #006834;
+  background: $dark-bg;
 }
 .p-datepicker .pi {
   font-size: 12px;
@@ -1526,10 +1527,10 @@ small, .small {
   color:#ffffff !important;
 }
 .p-multiselect-panel .p-multiselect-items .p-multiselect-item:not(.p-highlight):not(.p-disabled):hover {
-  background:#006834 !important;
+  background:$dark-bg !important;
 }
 .p-multiselect-panel .p-multiselect-items .p-multiselect-item {
-  background:#006834 !important;
+  background:$dark-bg !important;
   border-radius:5px;
   height:44px;
 }
@@ -1577,7 +1578,7 @@ small, .small {
   background: #f3f8f5;
 }
 .block-title {
-  background: #006834;
+  background: $dark-bg;
   color:#ffffff;
 }
 .nav-tabs-block .nav-link:hover{
@@ -1598,7 +1599,7 @@ small, .small {
   padding: 2px 15px;
   border-radius: 100px;
   border: none;
-  background:#006834;
+  background:$dark-bg;
   color: #ffffff;
 }
 .titleChatSMS {
@@ -1650,7 +1651,7 @@ small, .small {
   color: #000 !important;
   font-size: 16px;
   height: 46px;
-  border: 1px solid #006834;
+  border: 1px solid $dark-bg;
 }
 #modal-block-extra-large-search .p-dropdown {
   color: #000000;
@@ -1664,19 +1665,19 @@ small, .small {
   color:#000000
 }
 #modal-block-extra-large-search .p-paginator .p-paginator-pages .p-paginator-page:not(.p-highlight){
-  color: #006834;
-  border: 1px solid #006834;
+  color: $dark-bg;
+  border: 1px solid $dark-bg;
   border-radius: 60px;
 }
 #modal-block-extra-large-search .p-paginator .p-paginator-pages .p-paginator-page:not(.p-highlight):hover{
-  color: #006834;
-  border: 1px solid #006834;
+  color: $dark-bg;
+  border: 1px solid $dark-bg;
   background: #F0F7DC;
 }
 
 #modal-block-extra-large-search .p-paginator .p-paginator-first, .p-paginator .p-paginator-prev, .p-paginator .p-paginator-next, .p-paginator .p-paginator-last {
-  color: #006834;
-  border: 1px solid #006834;
+  color: $dark-bg;
+  border: 1px solid $dark-bg;
   border-radius: 60px;
 }
 #modal-block-extra-large-search .table-hover > tbody > tr:hover > * {
@@ -1688,8 +1689,8 @@ small, .small {
 }
 #modal-block-extra-large-search .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
   color: #fff;
-  border: 1px solid #006834;
-  background: #006834;
+  border: 1px solid $dark-bg;
+  background: $dark-bg;
   border-radius: 60px;
 }
 #modal-block-extra-large-search .p-datatable .p-sortable-column.p-highlight .p-sortable-column-icon {
@@ -1699,15 +1700,15 @@ small, .small {
   color: #000000;
 }
 #modal-block-extra-large-search .p-paginator .p-paginator-first:not(.p-disabled):not(.p-highlight):hover, .p-paginator .p-paginator-prev:not(.p-disabled):not(.p-highlight):hover, .p-paginator .p-paginator-next:not(.p-disabled):not(.p-highlight):hover, .p-paginator .p-paginator-last:not(.p-disabled):not(.p-highlight):hover {
-  color: #006834;
-  border: 1px solid #006834;
+  color: $dark-bg;
+  border: 1px solid $dark-bg;
   background: #F0F7DC;
 }
 #modal-block-extra-large-search .p-component, .p-component * {
   color: #000000;
 }
 #modal-block-extra-large-search .p-component, .p-component svg path {
-  color:#006834 !important;
+  color:$dark-bg !important;
 }
 #modal-block-extra-large-search  .p-dropdown-panel{
   //position: absolute;
@@ -1781,7 +1782,7 @@ small, .small {
     clear:both;
   }
   .chat-bubble {
-    //background-color: #006834;
+    //background-color: $dark-bg;
     color: #ffffff;
     padding: 10px;
     border-radius: 10px;
@@ -1913,7 +1914,7 @@ small, .small {
 
       .chat-bubble {
         border-radius: 15px 0px 15px 15px !important;
-        background:#006834 !important;
+        background:$dark-bg !important;
         max-width: 100%;
         float: right;
         clear:both;
@@ -2139,7 +2140,7 @@ input#priceZone.Infinity {
 }
 
 .headerGreen {
-  background: #0068345e !important;
+  background: $dark-bg !important;
 }
 
 
