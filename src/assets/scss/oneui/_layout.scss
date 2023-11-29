@@ -1,7 +1,8 @@
+@import "src/assets/scss/oneui/variables-bootstrap.scss";
+
 //
 // Layout
 // --------------------------------------------------
-@import "src/assets/scss/oneui/variables-bootstrap.scss";
 body {
   background-size: cover!important;
   background-position: center center!important;
@@ -516,7 +517,7 @@ html,body {
   border-top: 1px solid #00000045;
 }
 .bg-body-light {
-  background-color: #122412 !important;
+  background-color: $primary !important;
   border-bottom: 1px solid $primary !important;
 }
 .dropdown-item .fs-sm {

@@ -99,16 +99,6 @@ onUnmounted(() => {
               </button>
               <!-- END Toggle Sidebar -->
 
-              <!-- Toggle Mini Sidebar -->
-              <button
-                type="button"
-                class="btn btn-sm btn-alt-secondary me-2 d-none d-lg-inline-block rounded-0"
-                @click="store.sidebarMini({ mode: 'toggle' })"
-              >
-                <i class="fa fa-fw fa-ellipsis-v"></i>
-              </button>
-              <!-- END Toggle Mini Sidebar -->
-
               <!-- Open Search Section (visible on smaller screens) -->
               <div class="customLogoSizePhone">
                 <img class="img img-fluid" src="/src/assets/image/tempest_logo.png" width="140" alt="Logo" />

@@ -5,6 +5,7 @@ import { useTempestStore } from "@/stores/tempest";
 import BaseNavigation from "@/components/BaseNavigation.vue";
 // Grab menu navigation arrays
 import menu from "@/data/menu";
+import Button from "primevue/button";
 
 const navigation = menu.main;
 
@@ -86,13 +87,20 @@ watch(
           <!-- Logo -->
           <RouterLink :to="{ to: '/' }" class="fw-semibold text-dual">
             <span class="smini-visible">
-              <i class="fa fa-circle-notch text-primary"></i>
-            </span>
-            <span class="smini-hide fs-5 tracking-wider">
-              Tempest
+              <i class="fa fa-circle-notch text-tertiary"></i>
             </span>
           </RouterLink>
           <!-- END Logo -->
+
+          <!-- Toggle Mini Sidebar -->
+          <button
+              type="button"
+              class="btn btn-sm btn-alt-secondary me-2 d-none d-lg-inline-block rounded-0"
+              @click="store.sidebarMini({ mode: 'toggle' })"
+          >
+            <i class="fa fa-fw fa-ellipsis-v"></i>
+          </button>
+          <!-- END Toggle Mini Sidebar -->
         </slot>
 
         <!-- Extra -->
