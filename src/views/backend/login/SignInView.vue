@@ -129,7 +129,7 @@ onMounted(() => {
           <div class="w-100 text-end">
               <img class="img img-fluid" src="/src/assets/image/tempest_logo.png">
             <p class="text-white-75  ">
-              Bulwark's Sales Platform...
+              Bulwark's Admin Platform...
             </p>
           </div>
         </div>
@@ -163,7 +163,7 @@ onMounted(() => {
 
       <!-- Main Section -->
       <div class="hero-static col-lg-8 d-flex flex-column align-items-center backgroundTheme backgroundBlack    " style="background:#006834a6">
-        <div class=" backBlackText  backgroundGreen m-auto" style="border-radius:10px;">
+        <div class=" backBlackText backgroundBlue m-auto" style="border-radius:10px;">
           <div class="p-3 w-100 d-lg-none text-center ">
             <img class="img img-fluid" src="/src/assets/image/tempest_logo.png">
           </div>

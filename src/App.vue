@@ -2,11 +2,10 @@
   <RouterView />
   <div id="overlayBack">
     <div class="overlayBack">
-      <div class="backgroundGreen customLoadingBox">
+      <div class="backgroundBlue customLoadingBox">
         <img src="/src/assets/image/icons/loading-gif.gif" />
         <h4>Please wait!</h4>
       </div>
-
     </div>
   </div>
 </template>

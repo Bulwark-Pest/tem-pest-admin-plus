@@ -3,10 +3,10 @@ import { computed } from "vue";
 import { useTemplateStore } from "@/stores/template";
 
 // Import all layout partials
-import BaseHeader from "@/layouts/partials/Header.vue";
-import BaseSidebar from "@/layouts/partials/Sidebar.vue";
-import BaseSideOverlay from "@/layouts/partials/SideOverlay.vue";
-import BaseFooter from "@/layouts/partials/Footer.vue";
+import BaseHeader from "@/components/organisms/Header.vue";
+import BaseSidebar from "@/components/organisms/Sidebar.vue";
+import BaseSideOverlay from "@/components/organisms/SideOverlay.vue";
+import BaseFooter from "@/components/organisms/Footer.vue";
 import { useChannelStore } from "@/stores/channelStore.js";
 import { CHANNELS, SUBCHANNELS} from "@/assets/constants/channels.constants.js";
 import ModalManager from "@/components/modals/ModalManager.vue";

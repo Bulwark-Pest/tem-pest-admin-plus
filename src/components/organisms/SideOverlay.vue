@@ -69,7 +69,7 @@ const userName = localStorage.getItem('userName');
   <aside id="side-overlay">
     <slot>
       <!-- Side Header -->
-      <div class="content-header border-bottom backgroundGreen text-white">
+      <div class="content-header border-bottom backgroundBlue text-white">
         <slot name="header">
           <!-- User Avatar -->
           <a class="img-link " href="javascript:void(0)">

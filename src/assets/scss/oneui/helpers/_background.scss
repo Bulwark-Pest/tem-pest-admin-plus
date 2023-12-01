@@ -53,11 +53,11 @@
 
 // Image Background
 .bg-image {
-  background-position: 0% 50%;
+  background-position: 0 50%;
   background-size: cover;
 
   &-top {
-    background-position-y: 0%;
+    background-position-y: 0;
   }
   &-center {
     background-position-x: 50%;
