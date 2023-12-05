@@ -3,10 +3,10 @@ import { computed } from "vue";
 import { useTemplateStore } from "@/stores/template";
 
 // Import all layout partials
-import BaseHeader from "@/components/organisms/Header.vue";
-import BaseSidebar from "@/components/organisms/Sidebar.vue";
-import BaseSideOverlay from "@/components/organisms/SideOverlay.vue";
-import BaseFooter from "@/components/organisms/Footer.vue";
+import Header from "@/components/organisms/Header.vue";
+import Sidebar from "@/components/organisms/Sidebar.vue";
+import SideOverlay from "@/components/organisms/SideOverlay.vue";
+import Footer from "@/components/organisms/Footer.vue";
 import { useChannelStore } from "@/stores/channelStore.js";
 import { CHANNELS, SUBCHANNELS} from "@/assets/constants/channels.constants.js";
 import ModalManager from "@/components/modals/ModalManager.vue";
@@ -101,7 +101,7 @@ window
     <!-- END Page Overlay -->
 
     <!-- Side Overlay -->
-    <BaseSideOverlay v-if="store.layout.sideOverlay">
+    <SideOverlay v-if="store.layout.sideOverlay">
       <template #header>
         <slot name="side-overlay-header"></slot>
       </template>
@@ -111,11 +111,11 @@ window
       </template>
 
       <slot name="side-overlay"></slot>
-    </BaseSideOverlay>
+    </SideOverlay>
     <!-- END Side Overlay -->
 
     <!-- Sidebar -->
-    <BaseSidebar
+    <Sidebar
       v-if="store.layout.sidebar"
       :with-mini-nav="sidebarWithMiniNav"
     >
@@ -132,11 +132,11 @@ window
       </template>
 
       <slot name="sidebar"></slot>
-    </BaseSidebar>
+    </Sidebar>
     <!-- END Sidebar -->
 
     <!-- Header -->
-    <BaseHeader v-if="store.layout.header">
+    <Header v-if="store.layout.header">
       <template #content-left>
         <slot name="header-content-left"></slot>
       </template>
@@ -149,7 +149,7 @@ window
         <slot name="header-content"></slot>
       </template>
       <slot name="header"></slot>
-    </BaseHeader>
+    </Header>
     <!-- END Header -->
 
     <!-- Main Container -->
@@ -162,7 +162,7 @@ window
 
   </div>
   <!-- Footer -->
-  <BaseFooter v-if="store.layout.footer">
+  <Footer v-if="store.layout.footer">
 
     <template #content-left>
       <slot name="footer-content-left"></slot>
@@ -173,6 +173,6 @@ window
     </template>
     <slot name="footer"></slot>
 
-  </BaseFooter>
+  </Footer>
   <!-- END Footer -->
 </template>

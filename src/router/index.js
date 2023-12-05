@@ -13,7 +13,7 @@ import emitterControls from "@/assets/js/emitterControls";
 import { useTempestStore } from "@/stores/tempest";
 import { validLocalStorageCredentials } from "@/services/auth.service";
 
-const BackendMainDashboard = () => import("@/views/backend/app/dashboard/DashboardView.vue");
+const BackendMainDashboard = () => import("@/views/sidebar/dashboard/DashboardView.vue");
 
 // Auth
 const AuthSignIn4 = () => import("@/views/backend/login/SignInView.vue");

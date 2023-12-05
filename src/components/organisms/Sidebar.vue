@@ -6,6 +6,7 @@ import BaseNavigation from "@/components/BaseNavigation.vue";
 // Grab menu navigation arrays
 import menu from "@/data/menu";
 import Button from "primevue/button";
+import MiniSidebarToggle from "@/components/atoms/MiniSidebarToggle.vue";
 
 const navigation = menu.main;
 
@@ -84,23 +85,23 @@ watch(
       <!-- Side Header -->
       <div class="content-header">
         <slot name="header">
-          <!-- Logo -->
           <RouterLink :to="{ to: '/' }" class="fw-semibold text-dual">
             <span class="smini-visible">
               <i class="fa fa-circle-notch text-tertiary"></i>
             </span>
           </RouterLink>
-          <!-- END Logo -->
 
           <!-- Toggle Mini Sidebar -->
-          <button
-              type="button"
-              class="btn btn-sm btn-alt-secondary me-2 d-none d-lg-inline-block rounded-0"
-              @click="store.sidebarMini({ mode: 'toggle' })"
-          >
-            <i class="fa fa-fw fa-ellipsis-v"></i>
-          </button>
+          <MiniSidebarToggle />
           <!-- END Toggle Mini Sidebar -->
+
+          <!-- Logo -->
+          <slot v-if="!store.settings.sidebarMini" name="content-left">
+            <div>
+              <img class="img img-fluid" src="/src/assets/image/tempest_logo.png" width="100" alt="Logo" />
+            </div>
+          </slot>
+          <!-- END Logo -->
         </slot>
 
         <!-- Extra -->
@@ -309,8 +310,8 @@ watch(
           <div class="content-side">
             <BaseNavigation :nodes="navigation" />
             <div class=" d-flex flex-column align-items-center">
-              <span class="c-yellow version-leyend">v.{{ version }}</span>
-              <span class="c-yellow version-leyend">{{ buildDate }}</span>
+              <span class="text-secondary version-leyend">v.{{ version }}</span>
+              <span class="text-secondary version-leyend">{{ buildDate }}</span>
             </div>
           </div>
           <!-- END Side Navigation -->

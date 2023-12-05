@@ -86,27 +86,13 @@ onUnmounted(() => {
               </div>
             </template>
           </Toast>
+
           <!-- Left Section -->
           <div class="d-flex align-items-center">
-            <slot name="content-left">
-              <!-- Toggle Sidebar -->
-              <button
-                type="button"
-                class="btn btn-sm btn-alt-secondary me-2 d-lg-none rounded-0"
-                @click="store.sidebar({ mode: 'toggle' })"
-              >
-                <i class="fa fa-fw fa-bars"></i>
-              </button>
-              <!-- END Toggle Sidebar -->
-
-              <!-- Open Search Section (visible on smaller screens) -->
+            <slot v-if="store.settings.sidebarMini" name="content-left">
               <div class="customLogoSizePhone">
                 <img class="img img-fluid" src="/src/assets/image/tempest_logo.png" width="140" alt="Logo" />
               </div>
-              <!-- END Open Search Section -->
-
-              <!-- Search Form (visible on larger screens) -->
-              <!-- END Search Form -->
             </slot>
           </div>
           <!-- END Left Section -->
