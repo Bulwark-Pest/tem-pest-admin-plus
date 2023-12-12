@@ -119,10 +119,6 @@ window
       v-if="store.layout.sidebar"
       :with-mini-nav="sidebarWithMiniNav"
     >
-      <template #header>
-        <slot name="sidebar-header"></slot>
-      </template>
-
       <template #header-extra>
         <slot name="sidebar-header-extra"></slot>
       </template>
