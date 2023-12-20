@@ -1,29 +1,3 @@
-<template>
-  <RouterView />
-  <div id="overlayBack">
-    <div class="overlayBack">
-      <div class="backgroundBlue customLoadingBox">
-        <img src="/src/assets/image/icons/loading-gif.gif" />
-        <h4>Please wait!</h4>
-      </div>
-    </div>
-  </div>
-</template>
-
-<style lang="scss">
-// Main Stylesheet
-@import "@/assets/scss/main";
-
-// All color themes are included and available by default
-// Feel free to comment out any of them if you won't use them in your project
-
-@import "@/assets/scss/oneui/themes/amethyst";
-@import "@/assets/scss/oneui/themes/city";
-@import "@/assets/scss/oneui/themes/flat";
-@import "@/assets/scss/oneui/themes/modern";
-@import "@/assets/scss/oneui/themes/smooth";
-</style>
-
 <script setup lang="js">
 
 import { onMounted, onUnmounted,ref } from "vue";
@@ -85,3 +59,31 @@ onUnmounted(() => {
   UnsubscribeAuthValidation();
 });
 </script>
+
+<template>
+  <RouterView />
+  <div id="overlayBack">
+    <div class="overlayBack">
+      <div class="backgroundBlue customLoadingBox">
+        <img src="/src/assets/image/icons/loading-gif.gif" />
+        <h4>Please wait!</h4>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style lang="scss">
+// Main Stylesheet
+@import "@/assets/scss/main";
+
+// All color themes are included and available by default
+// Feel free to comment out any of them if you won't use them in your project
+
+@import "@/assets/scss/oneui/themes/amethyst";
+@import "@/assets/scss/oneui/themes/city";
+@import "@/assets/scss/oneui/themes/flat";
+@import "@/assets/scss/oneui/themes/modern";
+@import "@/assets/scss/oneui/themes/smooth";
+</style>
+
+

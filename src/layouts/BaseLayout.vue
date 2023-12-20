@@ -120,7 +120,7 @@ window
       :with-mini-nav="sidebarWithMiniNav"
     >
       <template #header-extra>
-        <slot name="sidebar-header-extra"></slot>
+        <slot></slot>
       </template>
 
       <template #content>

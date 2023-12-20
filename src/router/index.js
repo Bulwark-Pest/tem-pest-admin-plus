@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 
 // Main layout variations
 import LayoutSimple from "@/layouts/variations/Simple.vue";
-import LayoutBackend from "@/layouts/variations/Backend.vue";
+import LayoutHome from "@/layouts/variations/Home.vue";
 import { useChannelStore } from "../stores/channelStore";
 import { ENV } from "@/stores/config";
 import {emitter} from "@/main.js";
@@ -13,10 +13,11 @@ import emitterControls from "@/assets/js/emitterControls";
 import { useTempestStore } from "@/stores/tempest";
 import { validLocalStorageCredentials } from "@/services/auth.service";
 
-const BackendMainDashboard = () => import("@/views/sidebar/dashboard/DashboardView.vue");
+const MainDashboard = () => import("@/views/sidebar/dashboard/DashboardView.vue");
+const BranchMapping = () => import("@/views/sidebar/branchZones/BranchMap.vue");
 
 // Auth
-const AuthSignIn4 = () => import("@/views/backend/login/SignInView.vue");
+const AuthSignIn4 = () => import("@/views/home/login/SignInView.vue");
 
 
 const toast = Swal.mixin({
@@ -73,18 +74,26 @@ const routes = [
     ],
   },
   {
-    path: "/backend",
-    redirect: "/backend/dashboard",
-    component: LayoutBackend,
+    path: "/home",
+    redirect: "/home/dashboard",
+    component: LayoutHome,
     children: [
       {
         path: "dashboard",
-        name: "backend-dashboard",
-        component: BackendMainDashboard,
+        name: "home-dashboard",
+        component: MainDashboard,
         meta: {
           title: 'Dashboard',
         },
       },
+      {
+        path: "branch-mapping",
+        name: "home-branch-mapping",
+        component: BranchMapping,
+        meta: {
+          title: 'Branch Mapping',
+        },
+      }
     ],
   },
 ];
@@ -134,7 +143,7 @@ router.beforeEach(async (to, from, next) => {
         return next(false);
       }
     }
-  } else if (to.path === "/backend/customer-details") {
+  } else if (to.path === "/home/customer-details") {
     // ? check if the user is part of the chat team
     if(localStorage.getItem('userDepartment') === '4'){
       return next();
@@ -147,7 +156,7 @@ router.beforeEach(async (to, from, next) => {
         sessionStorage.setItem('phoneNumberList',phoneNumberList);
         return next();
       }else{
-        return next('/backend/dashboard');
+        return next('/home/dashboard');
       }
     }
     emitter.emit('NewCustomerModalToggle',true);
@@ -176,8 +185,8 @@ router.beforeResolve((to, from, next) => {
   document.title = to.meta?.title ?? 'Tempest';
   window.updateTestTabTitle();
   const userDepartment = localStorage.getItem('userDepartment');
-  if(to.path === '/backend/dashboard' && userDepartment === '3' && ENV.DISPLAY_WCSA_DASHBOARD) return next('/backend/wcsa-dashboard');
-  if(to.path === '/backend/wcsa-dashboard' && (userDepartment !== '3' ||!ENV.DISPLAY_WCSA_DASHBOARD) ) return next('/backend/dashboard');
+  if(to.path === '/home/dashboard' && userDepartment === '3' && ENV.DISPLAY_WCSA_DASHBOARD) return next('/home/wcsa-dashboard');
+  if(to.path === '/home/wcsa-dashboard' && (userDepartment !== '3' ||!ENV.DISPLAY_WCSA_DASHBOARD) ) return next('/home/dashboard');
   next();
 });
 

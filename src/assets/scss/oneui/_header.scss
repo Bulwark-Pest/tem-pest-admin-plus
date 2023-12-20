@@ -49,6 +49,7 @@
 
   @at-root #sidebar &,
     #side-overlay & {
+    justify-content: flex-start !important;
     padding-left: $space-side;
     padding-right: $space-side;
   }
